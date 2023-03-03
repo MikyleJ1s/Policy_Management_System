@@ -1,0 +1,163 @@
+<html>
+  <body>
+    <header>
+
+      <h1>Your Policies</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Policies</a></li>
+      </ul>
+    </nav>
+
+    <section>
+        <form action="/uploaded" method="post" enctype="multipart/form-data">      
+        <input type="file" name="file" />
+        <input type="submit" value="Upload">
+      </form>
+
+    </section>
+
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 4%;
+  height: 80%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 95%;
+  border-left: none;
+  height: 80%;
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'Policies')" id="defaultOpen"><i class="fa fa-folder-o"></i></button>
+  <button class="tablinks" onclick="opentab(event, 'Card')"><i class="fa fa-credit-card"></i></button>
+  <button class="tablinks" onclick="opentab(event, 'Stats')"><i class="fa fa-bar-chart"></i></button>
+  <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+    
+  <button class="tablinks" onclick="opentab(event, 'User')"><i class="fa fa-user-o"></i></button>
+</div>
+
+<div id="Policies" class="tabcontent">
+  {% if policies %}
+  <p class="policies">{{ policies }}
+{% endif %}
+</div>
+
+<div id="Card" class="tabcontent">
+  <form action="" method="post">
+    <tr>Account Number</tr><br>
+    <input type="number" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"  name="accountnumber" value="{{
+      request.form.accountnumber }}"/>
+      <br><br>
+    <tr>Expiry Date                      CVV</tr> <br>
+     <input type="number" placeholder="_ _ / _ _" name="expirydate" value="{{
+      request.form.expirydate }}"/>
+       
+      <input type="number" placeholder="_ _ _"  name="cvv" minlength="3" maxlength="3" value="{{
+       request.form.cvv }}"/>
+        <br><br>
+
+       <input type="checkbox" name="cvv" value="{{
+        request.form.cvv }}"> <br>
+        <input type="checkbox" name="cvv" value="{{
+          request.form.cvv }}"> <br>
+          <input type="checkbox" name="cvv" value="{{
+            request.form.cvv }}">
+       <br><br>
+    <input type="submit" value="Pay">
+  </form>   
+</div>
+
+<div id="Stats" class="tabcontent">
+<h3>Stats</h3>
+  <p>...</p>
+</div>
+
+<div id="User" class="tabcontent">
+  <h3>User Settings</h3>
+  <form action="/logout" method="post">
+    <tr>User Name</tr><br>
+    <input type="text" placeholder="Enter New Username"  name="accountnumber" value="{{
+      request.form.accountnumber }}">
+      <br><br>
+    <tr>Password</tr> <br>
+     <input type="text" placeholder="Enter New Password" name="expirydate" value="{{
+      request.form.expirydate }}">
+       
+       <br><br>
+       <input type="submit" value="Update">    <input type="submit" value="Log Out">
+  </form>  
+  </div>
+
+<script>
+function opentab(evt, tabname) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html> 
