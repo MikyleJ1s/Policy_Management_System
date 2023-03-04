@@ -15,7 +15,7 @@ def user_login():
                      
         if request.method == 'POST':
         
-            query = "select user_identifier from user_table where user_name = '" + request.form['username'] + "' and user_password = '" + request.form['password'] + "'"
+            query = "select user_identifier from user_table where user_name = '" + request.form['Username'] + "' and user_password = '" + request.form['Password'] + "'"
                 
             cur.execute(query)
             useraccount = cur.fetchone()
