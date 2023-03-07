@@ -1,46 +1,24 @@
 import mysql.connector
+from Logic import DatabaseUser
 from flask import Flask, redirect, render_template, url_for, request
+obj = DatabaseUser("localhost","root","Neville123","test_schema")
 
 app = Flask(__name__)
 user_id = ''
-    
-@app.route('/login', methods=['GET', 'POST'])
+@app.route("/")
+def form():
+    return render_template("login_page.html")
+@app.route('/data/', methods=['GET', 'POST'])
 def user_login():
-    global user_id
-    try:
-        myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
-        cur = myconn.cursor()
-        #dbs = cur.execute("create table users(username varchar(20) not null, id int not null primary key, password varchar(50) not null)")
-        #cur.execute("insert into users values ('Bob', 1, 'bobby'), ('Tom', 2, '123'),('Meg', 3, 'passwrd')")
-                     
-        if request.method == 'POST':
-        
-            query = "select user_identifier from user_table where user_name = '" + request.form['username'] + "' and user_password = '" + request.form['password'] + "'"
-                
-            cur.execute(query)
-            useraccount = cur.fetchone()
-            if useraccount:
-                user_id = useraccount[0]
-                return redirect(url_for('user_policies'))
-            else: 
-                return render_template('login_page.html', error='Invalid Credentials.')
+    if request.method == "POST":
+        form_data = request.form
+        password = form_data.get("Password")
+        username = form_data.get("Username")
+        if obj.isValidUser(username, password):
+            return render_template('policies_page.html',form_data = form_data)
+        else:
+            return render_template('val.html', form_data = form_data)   
 
-            
-        elif request.method == 'GET':
-            return render_template('login_page.html', error='Welcome')
-        
-        return render_template('login_page.html', error='')
-    
-    except:
-        myconn.rollback()
-    myconn.close()
-
-@app.route("/uploaded", methods = ['POST'])
-def uploaded():
-    if request.method == 'POST':
-        f = request.files['file']
-        f.save(f.filename)
-        return render_template('confirmupload.html', confirm="uploaded successfully")
 
 @app.route("/logout", methods = ['POST'])
 def login():
