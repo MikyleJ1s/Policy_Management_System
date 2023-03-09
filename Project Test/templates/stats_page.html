@@ -1,0 +1,121 @@
+<html>
+  <head>   
+    <title> Sanlam Policy Manager </title> 
+    <img src = "static/logo.png" alt = "Sanlam Logo" style="height: 100px; width: 300px; padding-left: 10px"/>
+  </head>
+</html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type = "text/javascript" src = {{url_for('static', filename = 'functions.js')}}></script>
+    <link rel= "stylesheet" href="{{url_for("static", filename = "style.css")}}">
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawDates);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+                ['j', 'k'],
+            
+                {% for key, value in data %}
+
+                    ['{{ key }}', {{ value }}],
+            {% endfor %}
+        ]);
+ 
+        var options = {
+          title: 'Where Your Money Went',
+          pieStartAngle: 100, 
+
+        };
+ 
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+
+
+      function drawDates() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Date');
+        data.addColumn('number', 'Payment');
+        data.addColumn({type:'string', role:'annotation'});
+        {% for i in dates %}
+        data.addRow([new Date({{i[0].replace('-', ',')}}), {{i[1]}}, "Hello"])
+
+        {% endfor %}
+    
+  
+        var chart = new google.visualization.ScatterChart(
+            document.getElementById('chart_div'));
+        chart.draw(data, {title: 'Payments Made this Year',
+
+                          vAxis: {title: "Amount"},
+                          hAxis: {title: "Months"},
+                          }
+                  );
+    }
+    </script>
+</head>
+
+<body style=  "background-color: #0074c9; ">
+  
+<ul>
+<div class="tab">
+  <form action = "/policies" method="post">
+  <button class="tablinks" ><i class="fa fa-folder-o"></i></button>
+  </form>
+  <form action = "/payments" method="post">
+  <button class="tablinks" ><i class="fa fa-credit-card"></i></button>
+</form>
+
+  <button class="tablinks" onclick="opentab(event, 'Stats')" id="defaultOpen"><i class="fa fa-bar-chart"></i></button>
+
+
+  <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+   <form action = "/settings" method="post"> 
+  <button class="tablinks" ><i class="fa fa-user-o"></i></button>
+</form>
+
+</div>
+
+
+
+
+<div id="Stats" class="tabcontent">
+<h3>STATS</h3>
+<div class = "graphs" style="width: 100%;">
+  <div id="piechart" style="width: 50%; height: 500px;"></div>
+  <div id="chart_div" style="width: 50%; height: 500px;"></div>
+</div>
+</div>
+
+
+</ul>
+<script>
+
+function opentab(evt, tabname) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html> 

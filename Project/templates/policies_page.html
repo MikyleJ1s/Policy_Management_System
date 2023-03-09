@@ -1,0 +1,123 @@
+<html>
+  <head>   
+    <title> Sanlam Policy Manager </title> 
+    <img src = "static/logo.png" alt = "Sanlam Logo" style="height: 100px; width: 300px; padding-left: 10px"/>
+  </head>
+</html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type = "text/javascript" src = {{url_for('static', filename = 'functions.js')}}></script>
+    <link rel= "stylesheet" href="{{url_for("static", filename = "style.css")}}">
+    
+  </head>
+
+<body style=  "background-color: #0074c9; ">
+  
+<ul>
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'Policies')" id="defaultOpen"><i class="fa fa-folder-o"></i></button>
+  <button class="tablinks" onclick="opentab(event, 'Card')"><i class="fa fa-credit-card"></i></button>
+  <button class="tablinks" onclick="opentab(event, 'Stats')"><i class="fa fa-bar-chart"></i></button>
+  <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+    
+  <button class="tablinks" onclick="opentab(event, 'User')"><i class="fa fa-user-o"></i></button>
+</div>
+
+<div id="Policies" class="tabcontent">
+  <h3>YOUR POLICIES</h3>
+  
+  {% for item in policies %}   
+  <div class="policies">
+      <h3>
+        
+        <img src="static/{{item[0]}}.png"/>
+        <br><br>
+        {{ item[0] }} </h3> 
+        <p>
+
+        R{{ item[1] }} 
+        <br> 
+        Insured Since: {{ item[2] }} | 
+        <a href=''>View Details</a>
+        </p>
+      
+    </div>
+  {% endfor %}
+</div>
+
+<div id="Card" class="tabcontent">
+  <h3>PAYMENT</h3>
+  <form action="" method="post">
+    <tr>Account Number</tr><br>
+    <input type="number" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"  name="accountnumber" value="{{request.form.accountnumber }}"/>
+      <br>
+      <br>
+    <tr>Expiry Date                      CVV</tr> <br>
+     <input type="number" placeholder="_ _ / _ _" name="expirydate" value="{{request.form.expirydate }}"/>
+       
+     <input type="number" placeholder="_ _ _"  name="cvv" minlength="3" maxlength="3" value="{{request.form.cvv }}"/>
+        <br>
+        <br>
+
+     <input type="checkbox" name="cvv" value="{{request.form.cvv }}"> <br>
+     <input type="checkbox" name="cvv" value="{{request.form.cvv }}"> <br>
+     <input type="checkbox" name="cvv" value="{{request.form.cvv }}">
+       <br>
+       <br>
+     <input type="button" value="Pay">
+  </form>   
+</div>
+
+<div id="Stats" class="tabcontent">
+<h3>STATS</h3>
+  <p>...</p>
+</div>
+
+<div id="User" class="tabcontent">
+  <h3>USER PROFILE</h3><br>
+  <form action="/settings" method="post">
+    <tr>User Name</tr><br>
+    <input class="update" type="text" placeholder="Enter New Username"  name="new_username" value="{{request.form.new_username }}">
+      <br><br>
+    <tr>Password</tr> <br>
+     <input class="update" type="text" placeholder="Enter New Password" name="new_password" value="{{request.form.new_password }}">
+       <br><br>
+       <input class="updatebutton" type="submit" value="Update"/>
+     </form>
+     <br><br>       
+     <br><br>       
+     <br><br>       
+     <br><br>       
+     <br><br>
+    <form class="logoutbutton" action="/logging_out" method="post">
+      <input type="submit" value="Log Out">
+    </form>  
+  </div>
+
+</ul>
+<script>
+
+function opentab(evt, tabname) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html> 

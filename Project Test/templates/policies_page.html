@@ -1,0 +1,83 @@
+<html>
+  <head>   
+    <title> Sanlam Policy Manager </title> 
+    <img src = "static/logo.png" alt = "Sanlam Logo" style="height: 100px; width: 300px; padding-left: 10px"/>
+  </head>
+</html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type = "text/javascript" src = {{url_for('static', filename = 'functions.js')}}></script>
+    <link rel= "stylesheet" href="{{url_for("static", filename = "style.css")}}">
+    
+  </head>
+
+<body style=  "background-color: #0074c9; ">
+  
+<ul>
+<div class="tab">
+
+    <button class="tablinks" onclick="opentab(event, 'Policies')" id="defaultOpen"><i class="fa fa-folder-o"></i></button>
+ 
+    <form action = "/payments" method="post">
+    <button class="tablinks" ><i class="fa fa-credit-card"></i></button>
+  </form>
+   <form action = "/stats" method="post"> 
+    <button class="tablinks" ><i class="fa fa-bar-chart"></i></button>
+     </form>
+  
+    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+     <form action = "/settings" method="post"> 
+    <button class="tablinks" ><i class="fa fa-user-o"></i></button>
+  </form>
+</div>
+
+<div id="Policies" class="tabcontent">
+  <h3>YOUR POLICIES</h3>
+  
+  {% for item in policies %}   
+  <div class="policies">
+      <h3>
+        
+        <img src="static/{{item[0]}}.png"/>
+        <br><br>
+        {{ item[0] }} </h3> 
+        <p>
+
+        R{{ item[1] }} 
+        <br> 
+        Insured Since: {{ item[2] }} | 
+        <a href=''>View Details</a>
+        </p>
+      
+    </div>
+  {% endfor %}
+</div>
+
+
+</ul>
+<script>
+
+function opentab(evt, tabname) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html> 

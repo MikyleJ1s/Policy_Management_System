@@ -1,0 +1,84 @@
+<html>
+  <head>   
+    <title> Sanlam Policy Manager </title> 
+    <img src = "static/logo.png" alt = "Sanlam Logo" style="height: 100px; width: 300px; padding-left: 10px"/>
+  </head>
+</html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type = "text/javascript" src = {{url_for('static', filename = 'functions.js')}}></script>
+    <link rel= "stylesheet" href="{{url_for("static", filename = "style.css")}}">
+    
+  </head>
+
+<body style=  "background-color: #0074c9; ">
+  
+<ul>
+<div class="tab">
+  <form action = "/policies" method="post">
+    <button class="tablinks" ><i class="fa fa-folder-o"></i></button>
+    </form>
+    
+    <button class="tablinks" onclick="opentab(event, 'Card')" id="defaultOpen"><i class="fa fa-credit-card"></i></button>
+  
+  <form action = "/stats" method="post">
+    <button class="tablinks" ><i class="fa fa-bar-chart"></i></button>
+  </form>
+  
+    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+     <form action = "/settings" method="post"> 
+    <button class="tablinks" ><i class="fa fa-user-o"></i></button>
+  </form>
+</div>
+
+
+<div id="Card" class="tabcontent">
+  <h3>PAYMENT</h3>
+  <form action="" method="post">
+    <tr>Account Number</tr><br>
+    <input type="number" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"  name="accountnumber" value="{{request.form.accountnumber }}"/>
+      <br>
+      <br>
+    <tr>Expiry Date                      CVV</tr> <br>
+     <input type="number" placeholder="_ _ / _ _" name="expirydate" value="{{request.form.expirydate }}"/>
+       
+     <input type="number" placeholder="_ _ _"  name="cvv" minlength="3" maxlength="3" value="{{request.form.cvv }}"/>
+        <br>
+        <br>
+
+     <input type="checkbox" name="cvv" value="{{request.form.cvv }}"> <br>
+     <input type="checkbox" name="cvv" value="{{request.form.cvv }}"> <br>
+     <input type="checkbox" name="cvv" value="{{request.form.cvv }}">
+       <br>
+       <br>
+     <input type="button" value="Pay">
+  </form>   
+</div>
+
+</ul>
+<script>
+
+function opentab(evt, tabname) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html> 
