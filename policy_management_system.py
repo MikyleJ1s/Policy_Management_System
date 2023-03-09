@@ -3,6 +3,7 @@ from Logic import DatabaseUser
 from flask import Flask, redirect, render_template, url_for, request
 obj = DatabaseUser("localhost","root","Neville123","test_schema")
 # hello there comment
+print("ok commit")
 app = Flask(__name__)
 user_id = ''
 @app.route("/")
