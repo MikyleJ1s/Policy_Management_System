@@ -14,7 +14,7 @@ class DatabaseUser():
         df = pd.read_sql(query,starlink) #stores results into a dataframe
         passwords = df.loc[:,"USERNAME"].to_list()   #fills the empty lists
         usernames = df.loc[:,"PASSWORD"].to_list()
-
+        #this is a comment 
         #This nested if checks if we have a valid user
         if username in usernames: #if a user exists in our known user list then continue else return false. The logic behind this is that if a user doesnt exist in our registered list there's no need to even check their password
             if password == passwords[usernames.index(username)]: #since we have a user with an exisiting username, as username is unique, this if statement check if the provided password is the same as the password stored by index reference of their username.
