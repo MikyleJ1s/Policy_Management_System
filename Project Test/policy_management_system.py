@@ -105,13 +105,30 @@ def pay():
         if request.method == 'POST':
             myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
             cur = myconn.cursor()    
-
-            query = "insert into payment_table (amount_paid, policy_identifier, payment_date, payment_description) values ('"+ request.form['amount_paid'] + "','" + "1"+"','"+str(date.today())+"','"+request.form['policy_name']+"')"
-            print(query)
+            
+            query = "select policy_identifier from policy_table where user_identifier = '"+str(user_id)+"' and policy_name = '"+request.form['policy_name']+"'"
             cur.execute(query)
+            policy_id = cur.fetchone()
+            
+            # check if the user has put in a valid insurance name ...  
+            if policy_id:
+                # put it in the payment table (like a bank statement) ...
+                query = "insert into payment_table (amount_paid, policy_identifier, payment_date, payment_description, user_identifier) values ('"+ request.form['amount_paid'] + "','" + str(policy_id[0])+"','"+str(date.today())+"','"+request.form['policy_name']+"','"+str(user_id)+"')"
+                cur.execute(query)
+                myconn.commit()
+                
+                # get the amount paid in order to update it to the total amount paid ...
+                query = "select amount_paid from policy_table where policy_identifier = '"+str(policy_id[0])+"'"
+                cur.execute(query)
+                print(query)
+                original_amount = cur.fetchone()
 
-            myconn.commit()
-
+                new_amount = original_amount[0] + float(request.form['amount_paid'])
+                print(new_amount)
+                query = "update policy_table set amount_paid = '"+ str(new_amount) +"' where policy_identifier = '"+str(policy_id[0])+"'"
+                print(query)
+                cur.execute(query)
+                myconn.commit()
             return redirect(url_for('payments'))
 
         # don't fully understand the get method yet but adding it anyway just in case ...
@@ -130,11 +147,11 @@ def stats():
         myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
         cur = myconn.cursor()
          
-        cur.execute("select payment_description,amount_paid from payment_table where policy_identifier = '" + str(user_id) + "'")    
+        cur.execute("select payment_description,amount_paid from payment_table where user_identifier = '" + str(user_id) + "'")    
 
         payments = cur.fetchall()
         
-        cur.execute("select payment_date,amount_paid from payment_table where policy_identifier = '" + str(user_id) + "'")    
+        cur.execute("select payment_date,amount_paid from payment_table where user_identifier = '" + str(user_id) + "'")    
 
         dates = cur.fetchall()
 
