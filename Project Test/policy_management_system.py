@@ -1,6 +1,6 @@
 import mysql.connector
 from flask import Flask, redirect, render_template, url_for, request
-
+from datetime import date
 app = Flask(__name__)
 user_id = ''
 
@@ -41,9 +41,15 @@ def user_login():
 def logging_out():
     return redirect(url_for('login'))
 
+
+
+
+
+
 @app.route("/policies", methods = ['POST'])
 def policies():
     return redirect(url_for('user_policies'))
+
 @app.route('/yourpolicies', methods=['GET', 'POST'])
 def user_policies(): 
     global user_id # get the user identifier ...
@@ -83,14 +89,39 @@ def user_policies():
         myconn.rollback()
     myconn.close()
 
-# when the user wants to update their credentials ...
-@app.route('/settings', methods=['GET', 'POST'])
-def settings():
-    return render_template('user_page.html')
+
+
+
 
 @app.route('/payments', methods=['GET', 'POST'])
 def payments():
+   
     return render_template('payment_page.html')
+
+@app.route('/pay', methods=['GET', 'POST'])
+def pay():
+    try:
+
+        if request.method == 'POST':
+            myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
+            cur = myconn.cursor()    
+
+            query = "insert into payment_table (amount_paid, policy_identifier, payment_date, payment_description) values ('"+ request.form['amount_paid'] + "','" + "1"+"','"+str(date.today())+"','"+request.form['policy_name']+"')"
+            print(query)
+            cur.execute(query)
+
+            myconn.commit()
+
+            return redirect(url_for('payments'))
+
+        # don't fully understand the get method yet but adding it anyway just in case ...
+        elif request.method == 'GET':
+            return render_template('payment_page.html')        
+    
+    except:
+        myconn.rollback()
+
+    myconn.close()
 
 @app.route('/stats', methods=['GET', 'POST'])
 def stats():
@@ -106,14 +137,14 @@ def stats():
         cur.execute("select payment_date,amount_paid from payment_table where policy_identifier = '" + str(user_id) + "'")    
 
         dates = cur.fetchall()
-        print(dates)
+
 
         pay = []
         #dates = [('1999-02-21' , 2223.23), ('2000-09-26' , 456), ('2000-01-01', 6.01), ('1999-01-01', 4565.64), ('2023-03-08', 15)]
         for i in dates:
             pay.append((str(i[0]).replace('-', ','), i[1]))
 
-        print(pay)
+
 
         return render_template('stats_page.html', data=payments, dates=pay)
 
@@ -125,6 +156,12 @@ def stats():
 
 
 
+
+
+# when the user wants to update their credentials ...
+@app.route('/settings', methods=['GET', 'POST'])
+def settings():
+    return render_template('user_page.html')
 
 @app.route('/userprofile', methods = ['GET', 'POST'])
 def user_settings():
@@ -153,6 +190,9 @@ def user_settings():
         myconn.rollback()
 
     myconn.close()
+ 
+ 
+ 
  
 
 if __name__ == "__main__":

@@ -36,28 +36,19 @@
 
 
 <div id="Card" class="tabcontent">
-  <h3>PAYMENT</h3>
-  <form action="" method="post">
-    <tr>Account Number</tr><br>
-    <input type="number" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"  name="accountnumber" value="{{request.form.accountnumber }}"/>
-      <br>
-      <br>
-    <tr>Expiry Date                      CVV</tr> <br>
-     <input type="number" placeholder="_ _ / _ _" name="expirydate" value="{{request.form.expirydate }}"/>
-       
-     <input type="number" placeholder="_ _ _"  name="cvv" minlength="3" maxlength="3" value="{{request.form.cvv }}"/>
-        <br>
-        <br>
+  <h3>USER PAYMENT</h3><br>
+  <form action="/pay" method="post">
+    <tr>Payment Amount</tr><br>
+    <input class="update" type="text" placeholder="Amount you want to pay"  name="amount_paid" value="{{request.form.amount_paid }}">
+      <br><br>
+    <tr>Policy Name</tr> <br>
+     <input class="update" type="text" placeholder="Name of the policy" name="policy_name" value="{{request.form.policy_name }}">
+       <br><br>
+       <input class="updatebutton" type="submit" value="Pay"/>
+     </form>
 
-     <input type="checkbox" name="cvv" value="{{request.form.cvv }}"> <br>
-     <input type="checkbox" name="cvv" value="{{request.form.cvv }}"> <br>
-     <input type="checkbox" name="cvv" value="{{request.form.cvv }}">
-       <br>
-       <br>
-     <input type="button" value="Pay">
-  </form>   
-</div>
 
+  </div>
 </ul>
 <script>
 
