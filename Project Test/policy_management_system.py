@@ -13,7 +13,7 @@ def login():
 def user_login():
     global user_id
     try:
-        myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
+        myconn = mysql.connector.connect(host="localhost", user="root", passwd="Sindiswa123", database="policy_management_system")
         cur = myconn.cursor()
          
         if request.method == 'POST':
@@ -54,7 +54,7 @@ def policies():
 def user_policies(): 
     global user_id # get the user identifier ...
     try:   
-        myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
+        myconn = mysql.connector.connect(host="localhost", user="root", passwd="Sindiswa123", database="policy_management_system")
         cur = myconn.cursor()
          
         cur.execute("select policy_name from policy_table where user_identifier = '" + str(user_id) + "'")    
@@ -103,7 +103,7 @@ def pay():
     try:
 
         if request.method == 'POST':
-            myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
+            myconn = mysql.connector.connect(host="localhost", user="root", passwd="Sindiswa123", database="policy_management_system")
             cur = myconn.cursor()    
 
             query = "insert into payment_table (amount_paid, policy_identifier, payment_date, payment_description) values ('"+ request.form['amount_paid'] + "','" + "1"+"','"+str(date.today())+"','"+request.form['policy_name']+"')"
@@ -127,7 +127,7 @@ def pay():
 def stats():
     global user_id # get the user identifier ...
     try:   
-        myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
+        myconn = mysql.connector.connect(host="localhost", user="root", passwd="Sindiswa123", database="policy_management_system")
         cur = myconn.cursor()
          
         cur.execute("select payment_description,amount_paid from payment_table where policy_identifier = '" + str(user_id) + "'")    
@@ -169,7 +169,7 @@ def user_settings():
     try:
 
         if request.method == 'POST':
-            myconn = mysql.connector.connect(host="localhost", user="root", passwd="Mikyle123", database="policy_management_system")
+            myconn = mysql.connector.connect(host="localhost", user="root", passwd="Sindiswa123", database="policy_management_system")
             cur = myconn.cursor()    
             
             # first check if the user is updating their credentials to something that is valid ... (still need to do this)
