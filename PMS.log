@@ -201,3 +201,778 @@ mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'r
 2023-03-11 15:45:21,213 INFO 127.0.0.1 - - [11/Mar/2023 15:45:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
 2023-03-11 15:45:21,213 INFO 127.0.0.1 - - [11/Mar/2023 15:45:21] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
 2023-03-11 15:45:21,213 INFO 127.0.0.1 - - [11/Mar/2023 15:45:21] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 17:33:06,477 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-11 17:33:06,477 INFO [33mPress CTRL+C to quit[0m
+2023-03-11 17:33:06,477 INFO  * Restarting with stat
+2023-03-11 17:33:07,492 WARNING  * Debugger is active!
+2023-03-11 17:33:07,500 INFO  * Debugger PIN: 388-731-485
+2023-03-11 17:34:10,151 INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2023-03-11 17:34:10,710 INFO Logout page called
+2023-03-11 17:34:10,718 INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "GET / HTTP/1.1" 200 -
+2023-03-11 17:34:10,854 INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "GET /static/style.css HTTP/1.1" 200 -
+2023-03-11 17:34:10,862 INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "GET /static/logo.png HTTP/1.1" 200 -
+2023-03-11 17:34:10,878 INFO 127.0.0.1 - - [11/Mar/2023 17:34:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-11 17:34:14,796 INFO User  data successfully fetched
+2023-03-11 17:34:14,796 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 17:34:14,804 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 17:34:14,820 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:34:14,828 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Life%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,828 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/functions.js HTTP/1.1" 200 -
+2023-03-11 17:34:14,828 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Home%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,828 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:34:14,836 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Pet%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,836 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Car%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,852 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Travel%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,852 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Disability%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,852 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Funeral%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,852 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Unemployment%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:14,860 INFO 127.0.0.1 - - [11/Mar/2023 17:34:14] "GET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 17:34:16,246 INFO 127.0.0.1 - - [11/Mar/2023 17:34:16] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:34:16,262 INFO 127.0.0.1 - - [11/Mar/2023 17:34:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:34:16,262 INFO 127.0.0.1 - - [11/Mar/2023 17:34:16] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:34:16,262 INFO 127.0.0.1 - - [11/Mar/2023 17:34:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:34:39,575 INFO 127.0.0.1 - - [11/Mar/2023 17:34:39] "[32mPOST /pay HTTP/1.1[0m" 302 -
+2023-03-11 17:34:39,583 INFO 127.0.0.1 - - [11/Mar/2023 17:34:39] "GET /payments HTTP/1.1" 200 -
+2023-03-11 17:34:39,599 INFO 127.0.0.1 - - [11/Mar/2023 17:34:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:34:39,599 INFO 127.0.0.1 - - [11/Mar/2023 17:34:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:34:39,599 INFO 127.0.0.1 - - [11/Mar/2023 17:34:39] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:34:41,209 INFO 127.0.0.1 - - [11/Mar/2023 17:34:41] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:34:41,217 INFO 127.0.0.1 - - [11/Mar/2023 17:34:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:34:41,217 INFO 127.0.0.1 - - [11/Mar/2023 17:34:41] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:34:41,217 INFO 127.0.0.1 - - [11/Mar/2023 17:34:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:35:06,398 INFO 127.0.0.1 - - [11/Mar/2023 17:35:06] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:35:06,414 INFO 127.0.0.1 - - [11/Mar/2023 17:35:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:35:06,414 INFO 127.0.0.1 - - [11/Mar/2023 17:35:06] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:35:06,414 INFO 127.0.0.1 - - [11/Mar/2023 17:35:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:35:13,997 INFO 127.0.0.1 - - [11/Mar/2023 17:35:13] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:35:14,013 INFO 127.0.0.1 - - [11/Mar/2023 17:35:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:35:14,013 INFO 127.0.0.1 - - [11/Mar/2023 17:35:14] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:35:14,013 INFO 127.0.0.1 - - [11/Mar/2023 17:35:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,918 INFO User policies fetched
+2023-03-11 17:36:11,919 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[32mPOST /policies HTTP/1.1[0m" 302 -
+2023-03-11 17:36:11,931 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 17:36:11,950 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,950 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,950 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,952 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,952 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,952 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,955 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,963 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,964 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,964 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,965 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:11,965 INFO 127.0.0.1 - - [11/Mar/2023 17:36:11] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:14,639 INFO 127.0.0.1 - - [11/Mar/2023 17:36:14] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:36:14,652 INFO 127.0.0.1 - - [11/Mar/2023 17:36:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:14,654 INFO 127.0.0.1 - - [11/Mar/2023 17:36:14] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:36:14,655 INFO 127.0.0.1 - - [11/Mar/2023 17:36:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:36:15,746 INFO 127.0.0.1 - - [11/Mar/2023 17:36:15] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:36:15,758 INFO 127.0.0.1 - - [11/Mar/2023 17:36:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:36:15,760 INFO 127.0.0.1 - - [11/Mar/2023 17:36:15] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:36:15,760 INFO 127.0.0.1 - - [11/Mar/2023 17:36:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:36:16,900 INFO Logout path initialised
+2023-03-11 17:36:16,900 INFO 127.0.0.1 - - [11/Mar/2023 17:36:16] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 17:36:16,907 INFO Logout page called
+2023-03-11 17:36:16,909 INFO 127.0.0.1 - - [11/Mar/2023 17:36:16] "GET / HTTP/1.1" 200 -
+2023-03-11 17:36:16,921 INFO 127.0.0.1 - - [11/Mar/2023 17:36:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:36:16,922 INFO 127.0.0.1 - - [11/Mar/2023 17:36:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,264 INFO User 1 data successfully fetched
+2023-03-11 17:38:52,264 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 17:38:52,272 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 17:38:52,287 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,299 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,300 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,301 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,302 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,303 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,304 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,308 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,311 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,318 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,319 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:38:52,321 INFO 127.0.0.1 - - [11/Mar/2023 17:38:52] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:39:10,182 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:39:10,196 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:39:10,199 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:39:10,200 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:39:10,912 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:39:10,922 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:39:10,927 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:39:10,928 INFO 127.0.0.1 - - [11/Mar/2023 17:39:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:42:26,447 INFO 127.0.0.1 - - [11/Mar/2023 17:42:26] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:42:26,460 INFO 127.0.0.1 - - [11/Mar/2023 17:42:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:26,462 INFO 127.0.0.1 - - [11/Mar/2023 17:42:26] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:42:26,464 INFO 127.0.0.1 - - [11/Mar/2023 17:42:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:42:27,697 INFO Logout path initialised
+2023-03-11 17:42:27,697 INFO 127.0.0.1 - - [11/Mar/2023 17:42:27] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 17:42:27,703 INFO Logout page called
+2023-03-11 17:42:27,704 INFO 127.0.0.1 - - [11/Mar/2023 17:42:27] "GET / HTTP/1.1" 200 -
+2023-03-11 17:42:27,719 INFO 127.0.0.1 - - [11/Mar/2023 17:42:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:42:27,720 INFO 127.0.0.1 - - [11/Mar/2023 17:42:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:31,189 INFO User 1 data successfully fetched
+2023-03-11 17:42:31,190 INFO 127.0.0.1 - - [11/Mar/2023 17:42:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 17:42:31,200 INFO 127.0.0.1 - - [11/Mar/2023 17:42:31] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 17:42:31,218 INFO 127.0.0.1 - - [11/Mar/2023 17:42:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:31,220 INFO 127.0.0.1 - - [11/Mar/2023 17:42:31] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:42:31,222 INFO 127.0.0.1 - - [11/Mar/2023 17:42:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:42:31,223 INFO 127.0.0.1 - - [11/Mar/2023 17:42:31] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:33,622 INFO 127.0.0.1 - - [11/Mar/2023 17:42:33] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:42:33,637 INFO 127.0.0.1 - - [11/Mar/2023 17:42:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:33,639 INFO 127.0.0.1 - - [11/Mar/2023 17:42:33] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:42:33,639 INFO 127.0.0.1 - - [11/Mar/2023 17:42:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:42:39,075 INFO 127.0.0.1 - - [11/Mar/2023 17:42:39] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:42:39,085 INFO 127.0.0.1 - - [11/Mar/2023 17:42:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:39,089 INFO 127.0.0.1 - - [11/Mar/2023 17:42:39] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:42:39,089 INFO 127.0.0.1 - - [11/Mar/2023 17:42:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:42:53,677 INFO 127.0.0.1 - - [11/Mar/2023 17:42:53] "[32mPOST /pay HTTP/1.1[0m" 302 -
+2023-03-11 17:42:53,689 INFO 127.0.0.1 - - [11/Mar/2023 17:42:53] "GET /payments HTTP/1.1" 200 -
+2023-03-11 17:42:53,703 INFO 127.0.0.1 - - [11/Mar/2023 17:42:53] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:42:53,704 INFO 127.0.0.1 - - [11/Mar/2023 17:42:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:53,705 INFO 127.0.0.1 - - [11/Mar/2023 17:42:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:42:54,897 INFO 127.0.0.1 - - [11/Mar/2023 17:42:54] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:42:54,909 INFO 127.0.0.1 - - [11/Mar/2023 17:42:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:42:54,912 INFO 127.0.0.1 - - [11/Mar/2023 17:42:54] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:42:54,913 INFO 127.0.0.1 - - [11/Mar/2023 17:42:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:44:09,362 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 17:44:09,530 INFO  * Restarting with stat
+2023-03-11 17:44:10,040 WARNING  * Debugger is active!
+2023-03-11 17:44:10,042 INFO  * Debugger PIN: 388-731-485
+2023-03-11 17:44:13,955 INFO 127.0.0.1 - - [11/Mar/2023 17:44:13] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:44:14,056 INFO 127.0.0.1 - - [11/Mar/2023 17:44:14] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:44:14,058 INFO 127.0.0.1 - - [11/Mar/2023 17:44:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:44:14,060 INFO 127.0.0.1 - - [11/Mar/2023 17:44:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:44:16,369 INFO 127.0.0.1 - - [11/Mar/2023 17:44:16] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:44:16,382 INFO 127.0.0.1 - - [11/Mar/2023 17:44:16] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:44:16,383 INFO 127.0.0.1 - - [11/Mar/2023 17:44:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:44:16,383 INFO 127.0.0.1 - - [11/Mar/2023 17:44:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:44:17,096 INFO Logout path initialised
+2023-03-11 17:44:17,096 INFO 127.0.0.1 - - [11/Mar/2023 17:44:17] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 17:44:17,102 INFO Logout page called
+2023-03-11 17:44:17,105 INFO 127.0.0.1 - - [11/Mar/2023 17:44:17] "GET / HTTP/1.1" 200 -
+2023-03-11 17:44:17,120 INFO 127.0.0.1 - - [11/Mar/2023 17:44:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:44:17,121 INFO 127.0.0.1 - - [11/Mar/2023 17:44:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:44:21,004 INFO User  data successfully fetched
+2023-03-11 17:44:21,005 INFO 127.0.0.1 - - [11/Mar/2023 17:44:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 17:44:21,017 INFO 127.0.0.1 - - [11/Mar/2023 17:44:21] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 17:44:21,034 INFO 127.0.0.1 - - [11/Mar/2023 17:44:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:44:21,036 INFO 127.0.0.1 - - [11/Mar/2023 17:44:21] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:44:21,037 INFO 127.0.0.1 - - [11/Mar/2023 17:44:21] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:44:21,037 INFO 127.0.0.1 - - [11/Mar/2023 17:44:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:44:22,600 INFO 127.0.0.1 - - [11/Mar/2023 17:44:22] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:44:22,618 INFO 127.0.0.1 - - [11/Mar/2023 17:44:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:44:22,620 INFO 127.0.0.1 - - [11/Mar/2023 17:44:22] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:44:22,621 INFO 127.0.0.1 - - [11/Mar/2023 17:44:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:44:24,399 INFO 127.0.0.1 - - [11/Mar/2023 17:44:24] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:44:24,416 INFO 127.0.0.1 - - [11/Mar/2023 17:44:24] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:44:24,417 INFO 127.0.0.1 - - [11/Mar/2023 17:44:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:44:24,419 INFO 127.0.0.1 - - [11/Mar/2023 17:44:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:46:40,394 INFO User policies fetched
+2023-03-11 17:46:40,395 INFO 127.0.0.1 - - [11/Mar/2023 17:46:40] "[32mPOST /policies HTTP/1.1[0m" 302 -
+2023-03-11 17:46:40,407 INFO 127.0.0.1 - - [11/Mar/2023 17:46:40] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 17:46:40,419 INFO 127.0.0.1 - - [11/Mar/2023 17:46:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:46:40,425 INFO 127.0.0.1 - - [11/Mar/2023 17:46:40] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:46:40,426 INFO 127.0.0.1 - - [11/Mar/2023 17:46:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:46:40,428 INFO 127.0.0.1 - - [11/Mar/2023 17:46:40] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:23,437 INFO 127.0.0.1 - - [11/Mar/2023 17:48:23] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:48:23,456 INFO 127.0.0.1 - - [11/Mar/2023 17:48:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:23,458 INFO 127.0.0.1 - - [11/Mar/2023 17:48:23] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:48:23,459 INFO 127.0.0.1 - - [11/Mar/2023 17:48:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:48:24,223 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:48:24,234 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:24,244 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:48:24,245 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:48:24,932 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:48:24,945 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:24,946 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:48:24,947 INFO 127.0.0.1 - - [11/Mar/2023 17:48:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:48:53,086 INFO User policies fetched
+2023-03-11 17:48:53,086 INFO 127.0.0.1 - - [11/Mar/2023 17:48:53] "[32mPOST /policies HTTP/1.1[0m" 302 -
+2023-03-11 17:48:53,100 INFO 127.0.0.1 - - [11/Mar/2023 17:48:53] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 17:48:53,111 INFO 127.0.0.1 - - [11/Mar/2023 17:48:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:53,114 INFO 127.0.0.1 - - [11/Mar/2023 17:48:53] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:48:53,115 INFO 127.0.0.1 - - [11/Mar/2023 17:48:53] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:53,116 INFO 127.0.0.1 - - [11/Mar/2023 17:48:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:48:54,921 INFO 127.0.0.1 - - [11/Mar/2023 17:48:54] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:48:54,933 INFO 127.0.0.1 - - [11/Mar/2023 17:48:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:54,937 INFO 127.0.0.1 - - [11/Mar/2023 17:48:54] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:48:54,937 INFO 127.0.0.1 - - [11/Mar/2023 17:48:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:48:55,415 INFO 127.0.0.1 - - [11/Mar/2023 17:48:55] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:48:55,431 INFO 127.0.0.1 - - [11/Mar/2023 17:48:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:55,435 INFO 127.0.0.1 - - [11/Mar/2023 17:48:55] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:48:55,435 INFO 127.0.0.1 - - [11/Mar/2023 17:48:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:48:58,825 INFO 127.0.0.1 - - [11/Mar/2023 17:48:58] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:48:58,836 INFO 127.0.0.1 - - [11/Mar/2023 17:48:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:48:58,839 INFO 127.0.0.1 - - [11/Mar/2023 17:48:58] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:48:58,839 INFO 127.0.0.1 - - [11/Mar/2023 17:48:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:24,070 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 17:51:24,175 INFO  * Restarting with stat
+2023-03-11 17:51:24,596 WARNING  * Debugger is active!
+2023-03-11 17:51:24,598 INFO  * Debugger PIN: 388-731-485
+2023-03-11 17:51:28,440 INFO 127.0.0.1 - - [11/Mar/2023 17:51:28] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:51:28,537 INFO 127.0.0.1 - - [11/Mar/2023 17:51:28] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:51:28,538 INFO 127.0.0.1 - - [11/Mar/2023 17:51:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:28,538 INFO 127.0.0.1 - - [11/Mar/2023 17:51:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:29,451 INFO Logout path initialised
+2023-03-11 17:51:29,451 INFO 127.0.0.1 - - [11/Mar/2023 17:51:29] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 17:51:29,458 INFO Logout page called
+2023-03-11 17:51:29,460 INFO 127.0.0.1 - - [11/Mar/2023 17:51:29] "GET / HTTP/1.1" 200 -
+2023-03-11 17:51:29,472 INFO 127.0.0.1 - - [11/Mar/2023 17:51:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:29,477 INFO 127.0.0.1 - - [11/Mar/2023 17:51:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,453 INFO User  data successfully fetched
+2023-03-11 17:51:33,454 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 17:51:33,467 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "GET /policies HTTP/1.1" 200 -
+2023-03-11 17:51:33,484 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,487 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,488 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,491 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,494 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,497 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,497 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,500 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,506 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,513 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,513 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:33,514 INFO 127.0.0.1 - - [11/Mar/2023 17:51:33] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:35,452 INFO 127.0.0.1 - - [11/Mar/2023 17:51:35] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:51:35,463 INFO 127.0.0.1 - - [11/Mar/2023 17:51:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:35,468 INFO 127.0.0.1 - - [11/Mar/2023 17:51:35] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:51:35,469 INFO 127.0.0.1 - - [11/Mar/2023 17:51:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:36,164 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:51:36,183 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:36,184 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:51:36,185 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:36,594 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:51:36,608 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:36,611 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:51:36,611 INFO 127.0.0.1 - - [11/Mar/2023 17:51:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,318 INFO User policies fetched
+2023-03-11 17:51:37,318 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[32mPOST /fetch_policies HTTP/1.1[0m" 302 -
+2023-03-11 17:51:37,329 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "GET /policies HTTP/1.1" 200 -
+2023-03-11 17:51:37,342 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,347 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,347 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,348 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,349 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,352 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,356 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,359 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,360 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,363 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,365 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:37,366 INFO 127.0.0.1 - - [11/Mar/2023 17:51:37] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:38,043 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:51:38,054 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:38,057 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:51:38,058 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:38,635 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "POST /stats HTTP/1.1" 200 -
+2023-03-11 17:51:38,649 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:51:38,655 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:51:38,656 INFO 127.0.0.1 - - [11/Mar/2023 17:51:38] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:52:15,036 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 17:52:15,180 INFO  * Restarting with stat
+2023-03-11 17:52:15,572 WARNING  * Debugger is active!
+2023-03-11 17:52:15,575 INFO  * Debugger PIN: 388-731-485
+2023-03-11 17:52:41,725 INFO 127.0.0.1 - - [11/Mar/2023 17:52:41] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:52:41,816 INFO 127.0.0.1 - - [11/Mar/2023 17:52:41] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:52:41,818 INFO 127.0.0.1 - - [11/Mar/2023 17:52:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:41,819 INFO 127.0.0.1 - - [11/Mar/2023 17:52:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:52:42,391 INFO 127.0.0.1 - - [11/Mar/2023 17:52:42] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:52:42,410 INFO 127.0.0.1 - - [11/Mar/2023 17:52:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:42,412 INFO 127.0.0.1 - - [11/Mar/2023 17:52:42] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:52:42,413 INFO 127.0.0.1 - - [11/Mar/2023 17:52:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:52:43,717 INFO 127.0.0.1 - - [11/Mar/2023 17:52:43] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:52:43,729 INFO 127.0.0.1 - - [11/Mar/2023 17:52:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:43,732 INFO 127.0.0.1 - - [11/Mar/2023 17:52:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:52:43,732 INFO 127.0.0.1 - - [11/Mar/2023 17:52:43] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:52:44,513 INFO Logout path initialised
+2023-03-11 17:52:44,514 INFO 127.0.0.1 - - [11/Mar/2023 17:52:44] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 17:52:44,521 INFO Logout page called
+2023-03-11 17:52:44,523 INFO 127.0.0.1 - - [11/Mar/2023 17:52:44] "GET / HTTP/1.1" 200 -
+2023-03-11 17:52:44,536 INFO 127.0.0.1 - - [11/Mar/2023 17:52:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:52:44,537 INFO 127.0.0.1 - - [11/Mar/2023 17:52:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:47,970 INFO User  data successfully fetched
+2023-03-11 17:52:47,970 INFO 127.0.0.1 - - [11/Mar/2023 17:52:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 17:52:47,981 INFO 127.0.0.1 - - [11/Mar/2023 17:52:47] "GET /policies HTTP/1.1" 200 -
+2023-03-11 17:52:47,997 INFO 127.0.0.1 - - [11/Mar/2023 17:52:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:47,999 INFO 127.0.0.1 - - [11/Mar/2023 17:52:47] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,000 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,001 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,003 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,005 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,007 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,009 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,011 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,012 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,014 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:48,016 INFO 127.0.0.1 - - [11/Mar/2023 17:52:48] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:49,392 INFO 127.0.0.1 - - [11/Mar/2023 17:52:49] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:52:49,405 INFO 127.0.0.1 - - [11/Mar/2023 17:52:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:49,407 INFO 127.0.0.1 - - [11/Mar/2023 17:52:49] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:52:49,408 INFO 127.0.0.1 - - [11/Mar/2023 17:52:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:52:50,060 INFO 127.0.0.1 - - [11/Mar/2023 17:52:50] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:52:50,075 INFO 127.0.0.1 - - [11/Mar/2023 17:52:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:52:50,079 INFO 127.0.0.1 - - [11/Mar/2023 17:52:50] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:52:50,079 INFO 127.0.0.1 - - [11/Mar/2023 17:52:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:54:19,876 INFO 127.0.0.1 - - [11/Mar/2023 17:54:19] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:54:19,899 INFO 127.0.0.1 - - [11/Mar/2023 17:54:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:54:19,900 INFO 127.0.0.1 - - [11/Mar/2023 17:54:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:54:19,900 INFO 127.0.0.1 - - [11/Mar/2023 17:54:19] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:54:40,675 INFO 127.0.0.1 - - [11/Mar/2023 17:54:40] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:54:40,689 INFO 127.0.0.1 - - [11/Mar/2023 17:54:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:54:40,690 INFO 127.0.0.1 - - [11/Mar/2023 17:54:40] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:54:40,691 INFO 127.0.0.1 - - [11/Mar/2023 17:54:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:55:10,124 INFO 127.0.0.1 - - [11/Mar/2023 17:55:10] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:55:10,142 INFO 127.0.0.1 - - [11/Mar/2023 17:55:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:55:10,143 INFO 127.0.0.1 - - [11/Mar/2023 17:55:10] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:55:10,144 INFO 127.0.0.1 - - [11/Mar/2023 17:55:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,716 INFO User policies fetched
+2023-03-11 17:56:38,717 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[32mPOST /fetch_policies HTTP/1.1[0m" 302 -
+2023-03-11 17:56:38,730 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "GET /policies HTTP/1.1" 200 -
+2023-03-11 17:56:38,752 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,754 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,755 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,755 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,756 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,757 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,759 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,769 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,770 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,771 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,771 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:38,772 INFO 127.0.0.1 - - [11/Mar/2023 17:56:38] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:39,676 INFO 127.0.0.1 - - [11/Mar/2023 17:56:39] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:56:39,690 INFO 127.0.0.1 - - [11/Mar/2023 17:56:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:39,692 INFO 127.0.0.1 - - [11/Mar/2023 17:56:39] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:39,693 INFO 127.0.0.1 - - [11/Mar/2023 17:56:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:41,938 INFO 127.0.0.1 - - [11/Mar/2023 17:56:41] "POST /settings HTTP/1.1" 200 -
+2023-03-11 17:56:41,952 INFO 127.0.0.1 - - [11/Mar/2023 17:56:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:41,954 INFO 127.0.0.1 - - [11/Mar/2023 17:56:41] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:41,955 INFO 127.0.0.1 - - [11/Mar/2023 17:56:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:49,708 INFO 127.0.0.1 - - [11/Mar/2023 17:56:49] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:56:49,728 INFO 127.0.0.1 - - [11/Mar/2023 17:56:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:49,729 INFO 127.0.0.1 - - [11/Mar/2023 17:56:49] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:49,730 INFO 127.0.0.1 - - [11/Mar/2023 17:56:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,127 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:56:50,137 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,140 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,141 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,690 INFO User policies fetched
+2023-03-11 17:56:50,691 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[32mPOST /fetch_policies HTTP/1.1[0m" 302 -
+2023-03-11 17:56:50,705 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "GET /policies HTTP/1.1" 200 -
+2023-03-11 17:56:50,719 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,723 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,725 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,727 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,728 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,730 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,731 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,737 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,738 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,742 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,745 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:50,746 INFO 127.0.0.1 - - [11/Mar/2023 17:56:50] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:51,843 INFO 127.0.0.1 - - [11/Mar/2023 17:56:51] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:56:51,857 INFO 127.0.0.1 - - [11/Mar/2023 17:56:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:51,860 INFO 127.0.0.1 - - [11/Mar/2023 17:56:51] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:51,861 INFO 127.0.0.1 - - [11/Mar/2023 17:56:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:56:52,255 INFO 127.0.0.1 - - [11/Mar/2023 17:56:52] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:56:52,268 INFO 127.0.0.1 - - [11/Mar/2023 17:56:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:56:52,274 INFO 127.0.0.1 - - [11/Mar/2023 17:56:52] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:56:52,277 INFO 127.0.0.1 - - [11/Mar/2023 17:56:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:57:18,420 INFO 127.0.0.1 - - [11/Mar/2023 17:57:18] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:57:18,439 INFO 127.0.0.1 - - [11/Mar/2023 17:57:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:57:18,442 INFO 127.0.0.1 - - [11/Mar/2023 17:57:18] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:57:18,443 INFO 127.0.0.1 - - [11/Mar/2023 17:57:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:59:07,009 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 17:59:07,127 INFO  * Restarting with stat
+2023-03-11 17:59:07,555 WARNING  * Debugger is active!
+2023-03-11 17:59:07,558 INFO  * Debugger PIN: 388-731-485
+2023-03-11 17:59:13,966 ERROR The following error was captured list index out of range
+Traceback (most recent call last):
+  File "c:\Users\E1002733\Desktop\Policy_Management_System\Project Test\policy_management_system.py", line 148, in stats
+    print(pay[0])
+IndexError: list index out of range
+2023-03-11 17:59:13,973 INFO 127.0.0.1 - - [11/Mar/2023 17:59:13] "[35m[1mPOST /statistics HTTP/1.1[0m" 500 -
+2023-03-11 17:59:14,057 INFO 127.0.0.1 - - [11/Mar/2023 17:59:14] "GET /statistics?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-03-11 17:59:14,058 INFO 127.0.0.1 - - [11/Mar/2023 17:59:14] "GET /statistics?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-03-11 17:59:14,082 INFO 127.0.0.1 - - [11/Mar/2023 17:59:14] "GET /statistics?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-03-11 17:59:14,096 INFO 127.0.0.1 - - [11/Mar/2023 17:59:14] "[36mGET /statistics?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-11 17:59:43,851 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 17:59:44,009 INFO  * Restarting with stat
+2023-03-11 17:59:44,477 WARNING  * Debugger is active!
+2023-03-11 17:59:44,479 INFO  * Debugger PIN: 388-731-485
+2023-03-11 17:59:50,187 INFO 127.0.0.1 - - [11/Mar/2023 17:59:50] "POST /payments HTTP/1.1" 200 -
+2023-03-11 17:59:50,276 INFO 127.0.0.1 - - [11/Mar/2023 17:59:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:59:50,277 INFO 127.0.0.1 - - [11/Mar/2023 17:59:50] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:59:50,278 INFO 127.0.0.1 - - [11/Mar/2023 17:59:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 17:59:51,056 INFO 127.0.0.1 - - [11/Mar/2023 17:59:51] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 17:59:51,066 INFO 127.0.0.1 - - [11/Mar/2023 17:59:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 17:59:51,073 INFO 127.0.0.1 - - [11/Mar/2023 17:59:51] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 17:59:51,074 INFO 127.0.0.1 - - [11/Mar/2023 17:59:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:00:01,752 INFO 127.0.0.1 - - [11/Mar/2023 18:00:01] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:00:01,766 INFO 127.0.0.1 - - [11/Mar/2023 18:00:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:01,769 INFO 127.0.0.1 - - [11/Mar/2023 18:00:01] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:00:01,770 INFO 127.0.0.1 - - [11/Mar/2023 18:00:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:00:02,571 INFO Logout path initialised
+2023-03-11 18:00:02,571 INFO 127.0.0.1 - - [11/Mar/2023 18:00:02] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:00:02,574 INFO Logout page called
+2023-03-11 18:00:02,575 INFO 127.0.0.1 - - [11/Mar/2023 18:00:02] "GET / HTTP/1.1" 200 -
+2023-03-11 18:00:02,586 INFO 127.0.0.1 - - [11/Mar/2023 18:00:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:00:02,587 INFO 127.0.0.1 - - [11/Mar/2023 18:00:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,406 INFO User  data successfully fetched
+2023-03-11 18:00:06,407 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:00:06,419 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:00:06,439 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,441 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,444 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,444 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,446 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,452 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,455 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,456 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,458 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,461 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,463 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:06,465 INFO 127.0.0.1 - - [11/Mar/2023 18:00:06] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:07,906 INFO 127.0.0.1 - - [11/Mar/2023 18:00:07] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:00:07,930 INFO 127.0.0.1 - - [11/Mar/2023 18:00:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:07,931 INFO 127.0.0.1 - - [11/Mar/2023 18:00:07] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:00:07,931 INFO 127.0.0.1 - - [11/Mar/2023 18:00:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:00:45,066 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 18:00:45,166 INFO  * Restarting with stat
+2023-03-11 18:00:45,516 WARNING  * Debugger is active!
+2023-03-11 18:00:45,519 INFO  * Debugger PIN: 388-731-485
+2023-03-11 18:00:55,199 INFO 127.0.0.1 - - [11/Mar/2023 18:00:55] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:00:55,282 INFO 127.0.0.1 - - [11/Mar/2023 18:00:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:00:55,289 INFO 127.0.0.1 - - [11/Mar/2023 18:00:55] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:00:55,291 INFO 127.0.0.1 - - [11/Mar/2023 18:00:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:06,159 INFO 127.0.0.1 - - [11/Mar/2023 18:01:06] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:01:06,173 INFO 127.0.0.1 - - [11/Mar/2023 18:01:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:06,175 INFO 127.0.0.1 - - [11/Mar/2023 18:01:06] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:01:06,176 INFO 127.0.0.1 - - [11/Mar/2023 18:01:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:07,174 INFO Logout path initialised
+2023-03-11 18:01:07,174 INFO 127.0.0.1 - - [11/Mar/2023 18:01:07] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:01:07,180 INFO Logout page called
+2023-03-11 18:01:07,182 INFO 127.0.0.1 - - [11/Mar/2023 18:01:07] "GET / HTTP/1.1" 200 -
+2023-03-11 18:01:07,195 INFO 127.0.0.1 - - [11/Mar/2023 18:01:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:07,197 INFO 127.0.0.1 - - [11/Mar/2023 18:01:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,243 INFO User  data successfully fetched
+2023-03-11 18:01:11,244 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:01:11,255 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:01:11,272 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,279 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,281 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,281 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,281 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,282 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,284 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,286 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,288 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,291 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,292 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:11,293 INFO 127.0.0.1 - - [11/Mar/2023 18:01:11] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:12,563 INFO 127.0.0.1 - - [11/Mar/2023 18:01:12] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:01:12,581 INFO 127.0.0.1 - - [11/Mar/2023 18:01:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:12,582 INFO 127.0.0.1 - - [11/Mar/2023 18:01:12] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:01:12,586 INFO 127.0.0.1 - - [11/Mar/2023 18:01:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:38,961 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 18:01:39,061 INFO  * Restarting with stat
+2023-03-11 18:01:39,427 WARNING  * Debugger is active!
+2023-03-11 18:01:39,427 INFO  * Debugger PIN: 388-731-485
+2023-03-11 18:01:44,129 INFO 127.0.0.1 - - [11/Mar/2023 18:01:44] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:01:44,222 INFO 127.0.0.1 - - [11/Mar/2023 18:01:44] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:01:44,224 INFO 127.0.0.1 - - [11/Mar/2023 18:01:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:44,225 INFO 127.0.0.1 - - [11/Mar/2023 18:01:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:45,798 INFO 127.0.0.1 - - [11/Mar/2023 18:01:45] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:01:45,813 INFO 127.0.0.1 - - [11/Mar/2023 18:01:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:45,815 INFO 127.0.0.1 - - [11/Mar/2023 18:01:45] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:01:45,816 INFO 127.0.0.1 - - [11/Mar/2023 18:01:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:49,075 INFO Logout path initialised
+2023-03-11 18:01:49,075 INFO 127.0.0.1 - - [11/Mar/2023 18:01:49] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:01:49,081 INFO Logout page called
+2023-03-11 18:01:49,082 INFO 127.0.0.1 - - [11/Mar/2023 18:01:49] "GET / HTTP/1.1" 200 -
+2023-03-11 18:01:49,098 INFO 127.0.0.1 - - [11/Mar/2023 18:01:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:49,100 INFO 127.0.0.1 - - [11/Mar/2023 18:01:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,884 INFO User  data successfully fetched
+2023-03-11 18:01:52,884 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:01:52,895 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:01:52,911 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,919 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,920 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,921 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,921 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,922 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,923 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,925 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,927 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,932 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,936 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:52,936 INFO 127.0.0.1 - - [11/Mar/2023 18:01:52] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:55,453 INFO 127.0.0.1 - - [11/Mar/2023 18:01:55] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:01:55,478 INFO 127.0.0.1 - - [11/Mar/2023 18:01:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:01:55,478 INFO 127.0.0.1 - - [11/Mar/2023 18:01:55] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:01:55,479 INFO 127.0.0.1 - - [11/Mar/2023 18:01:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:03:11,059 INFO 127.0.0.1 - - [11/Mar/2023 18:03:11] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:03:11,074 INFO 127.0.0.1 - - [11/Mar/2023 18:03:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:11,079 INFO 127.0.0.1 - - [11/Mar/2023 18:03:11] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:03:11,080 INFO 127.0.0.1 - - [11/Mar/2023 18:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:03:12,199 INFO 127.0.0.1 - - [11/Mar/2023 18:03:12] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:03:12,217 INFO 127.0.0.1 - - [11/Mar/2023 18:03:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:12,221 INFO 127.0.0.1 - - [11/Mar/2023 18:03:12] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:03:12,221 INFO 127.0.0.1 - - [11/Mar/2023 18:03:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:03:20,351 INFO 127.0.0.1 - - [11/Mar/2023 18:03:20] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:03:20,366 INFO 127.0.0.1 - - [11/Mar/2023 18:03:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:20,368 INFO 127.0.0.1 - - [11/Mar/2023 18:03:20] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:03:20,369 INFO 127.0.0.1 - - [11/Mar/2023 18:03:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:03:21,403 INFO Logout path initialised
+2023-03-11 18:03:21,403 INFO 127.0.0.1 - - [11/Mar/2023 18:03:21] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:03:21,409 INFO Logout page called
+2023-03-11 18:03:21,410 INFO 127.0.0.1 - - [11/Mar/2023 18:03:21] "GET / HTTP/1.1" 200 -
+2023-03-11 18:03:21,425 INFO 127.0.0.1 - - [11/Mar/2023 18:03:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:03:21,426 INFO 127.0.0.1 - - [11/Mar/2023 18:03:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,535 INFO User 1 data successfully fetched
+2023-03-11 18:03:25,536 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:03:25,545 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:03:25,564 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,568 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,569 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,570 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,572 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,574 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,575 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,579 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,584 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,586 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,588 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:25,590 INFO 127.0.0.1 - - [11/Mar/2023 18:03:25] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:26,894 INFO 127.0.0.1 - - [11/Mar/2023 18:03:26] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:03:26,911 INFO 127.0.0.1 - - [11/Mar/2023 18:03:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:03:26,923 INFO 127.0.0.1 - - [11/Mar/2023 18:03:26] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:03:26,924 INFO 127.0.0.1 - - [11/Mar/2023 18:03:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:04:21,111 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:04:21,126 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:21,130 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:04:21,133 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:04:21,902 INFO Logout path initialised
+2023-03-11 18:04:21,902 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:04:21,909 INFO Logout page called
+2023-03-11 18:04:21,910 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "GET / HTTP/1.1" 200 -
+2023-03-11 18:04:21,925 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:04:21,926 INFO 127.0.0.1 - - [11/Mar/2023 18:04:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,649 INFO User 1 data successfully fetched
+2023-03-11 18:04:25,650 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:04:25,657 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:04:25,675 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,678 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,678 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,680 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,680 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,682 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,685 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,687 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,689 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,690 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,695 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:25,696 INFO 127.0.0.1 - - [11/Mar/2023 18:04:25] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:27,127 INFO 127.0.0.1 - - [11/Mar/2023 18:04:27] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:04:27,150 INFO 127.0.0.1 - - [11/Mar/2023 18:04:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:04:27,152 INFO 127.0.0.1 - - [11/Mar/2023 18:04:27] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:04:27,155 INFO 127.0.0.1 - - [11/Mar/2023 18:04:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:05:26,433 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 18:05:26,539 INFO  * Restarting with stat
+2023-03-11 18:05:26,921 WARNING  * Debugger is active!
+2023-03-11 18:05:26,923 INFO  * Debugger PIN: 388-731-485
+2023-03-11 18:05:30,216 INFO 127.0.0.1 - - [11/Mar/2023 18:05:30] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:05:30,311 INFO 127.0.0.1 - - [11/Mar/2023 18:05:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:30,315 INFO 127.0.0.1 - - [11/Mar/2023 18:05:30] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:05:30,316 INFO 127.0.0.1 - - [11/Mar/2023 18:05:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:05:31,344 INFO 127.0.0.1 - - [11/Mar/2023 18:05:31] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:05:31,355 INFO 127.0.0.1 - - [11/Mar/2023 18:05:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:31,360 INFO 127.0.0.1 - - [11/Mar/2023 18:05:31] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:05:31,360 INFO 127.0.0.1 - - [11/Mar/2023 18:05:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:05:32,731 INFO 127.0.0.1 - - [11/Mar/2023 18:05:32] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:05:32,744 INFO 127.0.0.1 - - [11/Mar/2023 18:05:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:32,747 INFO 127.0.0.1 - - [11/Mar/2023 18:05:32] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:05:32,748 INFO 127.0.0.1 - - [11/Mar/2023 18:05:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:05:33,529 INFO Logout path initialised
+2023-03-11 18:05:33,529 INFO 127.0.0.1 - - [11/Mar/2023 18:05:33] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:05:33,538 INFO Logout page called
+2023-03-11 18:05:33,540 INFO 127.0.0.1 - - [11/Mar/2023 18:05:33] "GET / HTTP/1.1" 200 -
+2023-03-11 18:05:33,555 INFO 127.0.0.1 - - [11/Mar/2023 18:05:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:05:33,555 INFO 127.0.0.1 - - [11/Mar/2023 18:05:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,576 INFO User  data successfully fetched
+2023-03-11 18:05:37,577 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:05:37,590 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:05:37,611 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,611 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,613 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,614 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,617 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,619 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,621 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,622 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,624 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,629 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,632 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:37,633 INFO 127.0.0.1 - - [11/Mar/2023 18:05:37] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:39,030 INFO 127.0.0.1 - - [11/Mar/2023 18:05:39] "POST /payments HTTP/1.1" 200 -
+2023-03-11 18:05:39,045 INFO 127.0.0.1 - - [11/Mar/2023 18:05:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:05:39,045 INFO 127.0.0.1 - - [11/Mar/2023 18:05:39] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:05:39,047 INFO 127.0.0.1 - - [11/Mar/2023 18:05:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:06:01,504 INFO 127.0.0.1 - - [11/Mar/2023 18:06:01] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:06:01,521 INFO 127.0.0.1 - - [11/Mar/2023 18:06:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:06:01,522 INFO 127.0.0.1 - - [11/Mar/2023 18:06:01] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:06:01,523 INFO 127.0.0.1 - - [11/Mar/2023 18:06:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:06:02,564 INFO 127.0.0.1 - - [11/Mar/2023 18:06:02] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:06:02,574 INFO 127.0.0.1 - - [11/Mar/2023 18:06:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:06:02,579 INFO 127.0.0.1 - - [11/Mar/2023 18:06:02] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:06:02,581 INFO 127.0.0.1 - - [11/Mar/2023 18:06:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:07,082 INFO 127.0.0.1 - - [11/Mar/2023 18:09:07] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:09:07,094 INFO 127.0.0.1 - - [11/Mar/2023 18:09:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:07,102 INFO 127.0.0.1 - - [11/Mar/2023 18:09:07] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:07,102 INFO 127.0.0.1 - - [11/Mar/2023 18:09:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:08,189 INFO 127.0.0.1 - - [11/Mar/2023 18:09:08] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:09:08,205 INFO 127.0.0.1 - - [11/Mar/2023 18:09:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:08,205 INFO 127.0.0.1 - - [11/Mar/2023 18:09:08] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:08,205 INFO 127.0.0.1 - - [11/Mar/2023 18:09:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:09,838 INFO 127.0.0.1 - - [11/Mar/2023 18:09:09] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:09:09,855 INFO 127.0.0.1 - - [11/Mar/2023 18:09:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:09,859 INFO 127.0.0.1 - - [11/Mar/2023 18:09:09] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:09,860 INFO 127.0.0.1 - - [11/Mar/2023 18:09:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:11,193 INFO Logout path initialised
+2023-03-11 18:09:11,193 INFO 127.0.0.1 - - [11/Mar/2023 18:09:11] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:09:11,200 INFO Logout page called
+2023-03-11 18:09:11,201 INFO 127.0.0.1 - - [11/Mar/2023 18:09:11] "GET / HTTP/1.1" 200 -
+2023-03-11 18:09:11,215 INFO 127.0.0.1 - - [11/Mar/2023 18:09:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:11,219 INFO 127.0.0.1 - - [11/Mar/2023 18:09:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:14,299 INFO User 1 data successfully fetched
+2023-03-11 18:09:14,300 INFO 127.0.0.1 - - [11/Mar/2023 18:09:14] "POST /login HTTP/1.1" 200 -
+2023-03-11 18:09:14,315 INFO 127.0.0.1 - - [11/Mar/2023 18:09:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:14,317 INFO 127.0.0.1 - - [11/Mar/2023 18:09:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,167 INFO User 1 data successfully fetched
+2023-03-11 18:09:18,167 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:09:18,177 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:09:18,192 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,195 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,197 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,199 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,201 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,203 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,206 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,208 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,210 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,213 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,215 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:18,216 INFO 127.0.0.1 - - [11/Mar/2023 18:09:18] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:19,745 INFO 127.0.0.1 - - [11/Mar/2023 18:09:19] "POST /payments HTTP/1.1" 200 -
+2023-03-11 18:09:19,760 INFO 127.0.0.1 - - [11/Mar/2023 18:09:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:19,763 INFO 127.0.0.1 - - [11/Mar/2023 18:09:19] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:19,764 INFO 127.0.0.1 - - [11/Mar/2023 18:09:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:20,571 INFO 127.0.0.1 - - [11/Mar/2023 18:09:20] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:09:20,587 INFO 127.0.0.1 - - [11/Mar/2023 18:09:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:20,587 INFO 127.0.0.1 - - [11/Mar/2023 18:09:20] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:20,589 INFO 127.0.0.1 - - [11/Mar/2023 18:09:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:37,790 INFO 127.0.0.1 - - [11/Mar/2023 18:09:37] "POST /payments HTTP/1.1" 200 -
+2023-03-11 18:09:37,803 INFO 127.0.0.1 - - [11/Mar/2023 18:09:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:37,806 INFO 127.0.0.1 - - [11/Mar/2023 18:09:37] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:37,806 INFO 127.0.0.1 - - [11/Mar/2023 18:09:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:38,316 INFO 127.0.0.1 - - [11/Mar/2023 18:09:38] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:09:38,326 INFO 127.0.0.1 - - [11/Mar/2023 18:09:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:38,331 INFO 127.0.0.1 - - [11/Mar/2023 18:09:38] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:38,332 INFO 127.0.0.1 - - [11/Mar/2023 18:09:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:39,648 INFO 127.0.0.1 - - [11/Mar/2023 18:09:39] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:09:39,663 INFO 127.0.0.1 - - [11/Mar/2023 18:09:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:39,666 INFO 127.0.0.1 - - [11/Mar/2023 18:09:39] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:39,666 INFO 127.0.0.1 - - [11/Mar/2023 18:09:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:40,569 INFO Logout path initialised
+2023-03-11 18:09:40,570 INFO 127.0.0.1 - - [11/Mar/2023 18:09:40] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:09:40,576 INFO Logout page called
+2023-03-11 18:09:40,576 INFO 127.0.0.1 - - [11/Mar/2023 18:09:40] "GET / HTTP/1.1" 200 -
+2023-03-11 18:09:40,590 INFO 127.0.0.1 - - [11/Mar/2023 18:09:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:40,591 INFO 127.0.0.1 - - [11/Mar/2023 18:09:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,526 INFO User 1 data successfully fetched
+2023-03-11 18:09:44,526 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:09:44,535 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:09:44,551 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,560 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,560 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,561 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,563 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,563 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,564 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,566 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,571 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,572 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,574 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:44,577 INFO 127.0.0.1 - - [11/Mar/2023 18:09:44] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:45,968 INFO 127.0.0.1 - - [11/Mar/2023 18:09:45] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:09:45,981 INFO 127.0.0.1 - - [11/Mar/2023 18:09:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:09:45,985 INFO 127.0.0.1 - - [11/Mar/2023 18:09:45] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:09:45,985 INFO 127.0.0.1 - - [11/Mar/2023 18:09:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:10:24,834 INFO 127.0.0.1 - - [11/Mar/2023 18:10:24] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:10:24,850 INFO 127.0.0.1 - - [11/Mar/2023 18:10:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:24,853 INFO 127.0.0.1 - - [11/Mar/2023 18:10:24] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:10:24,854 INFO 127.0.0.1 - - [11/Mar/2023 18:10:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:10:25,624 INFO Logout path initialised
+2023-03-11 18:10:25,625 INFO 127.0.0.1 - - [11/Mar/2023 18:10:25] "[32mPOST /logging_out HTTP/1.1[0m" 302 -
+2023-03-11 18:10:25,632 INFO Logout page called
+2023-03-11 18:10:25,632 INFO 127.0.0.1 - - [11/Mar/2023 18:10:25] "GET / HTTP/1.1" 200 -
+2023-03-11 18:10:25,644 INFO 127.0.0.1 - - [11/Mar/2023 18:10:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:10:25,649 INFO 127.0.0.1 - - [11/Mar/2023 18:10:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,760 INFO User 1 data successfully fetched
+2023-03-11 18:10:29,760 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 18:10:29,772 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "GET /policies HTTP/1.1" 200 -
+2023-03-11 18:10:29,793 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,798 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,801 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,802 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,805 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,808 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,815 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,817 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,818 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,820 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,822 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:29,822 INFO 127.0.0.1 - - [11/Mar/2023 18:10:29] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:31,132 INFO 127.0.0.1 - - [11/Mar/2023 18:10:31] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:10:31,147 INFO 127.0.0.1 - - [11/Mar/2023 18:10:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:10:31,149 INFO 127.0.0.1 - - [11/Mar/2023 18:10:31] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:10:31,150 INFO 127.0.0.1 - - [11/Mar/2023 18:10:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:11:02,904 INFO 127.0.0.1 - - [11/Mar/2023 18:11:02] "POST /payments HTTP/1.1" 200 -
+2023-03-11 18:11:02,916 INFO 127.0.0.1 - - [11/Mar/2023 18:11:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:11:02,918 INFO 127.0.0.1 - - [11/Mar/2023 18:11:02] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:11:02,919 INFO 127.0.0.1 - - [11/Mar/2023 18:11:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:11:03,394 INFO 127.0.0.1 - - [11/Mar/2023 18:11:03] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:11:03,406 INFO 127.0.0.1 - - [11/Mar/2023 18:11:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:11:03,409 INFO 127.0.0.1 - - [11/Mar/2023 18:11:03] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:11:03,410 INFO 127.0.0.1 - - [11/Mar/2023 18:11:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:11:25,592 INFO 127.0.0.1 - - [11/Mar/2023 18:11:25] "POST /payments HTTP/1.1" 200 -
+2023-03-11 18:11:25,604 INFO 127.0.0.1 - - [11/Mar/2023 18:11:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:11:25,612 INFO 127.0.0.1 - - [11/Mar/2023 18:11:25] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:11:25,612 INFO 127.0.0.1 - - [11/Mar/2023 18:11:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:11:26,197 INFO 127.0.0.1 - - [11/Mar/2023 18:11:26] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:11:26,206 INFO 127.0.0.1 - - [11/Mar/2023 18:11:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:11:26,213 INFO 127.0.0.1 - - [11/Mar/2023 18:11:26] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:11:26,213 INFO 127.0.0.1 - - [11/Mar/2023 18:11:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:11:37,926 INFO 127.0.0.1 - - [11/Mar/2023 18:11:37] "POST /payments HTTP/1.1" 200 -
+2023-03-11 18:11:37,937 INFO 127.0.0.1 - - [11/Mar/2023 18:11:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:11:37,942 INFO 127.0.0.1 - - [11/Mar/2023 18:11:37] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:11:37,943 INFO 127.0.0.1 - - [11/Mar/2023 18:11:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:11:38,477 INFO 127.0.0.1 - - [11/Mar/2023 18:11:38] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:11:38,489 INFO 127.0.0.1 - - [11/Mar/2023 18:11:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:11:38,491 INFO 127.0.0.1 - - [11/Mar/2023 18:11:38] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:11:38,492 INFO 127.0.0.1 - - [11/Mar/2023 18:11:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:12:01,008 INFO 127.0.0.1 - - [11/Mar/2023 18:12:01] "POST /settings HTTP/1.1" 200 -
+2023-03-11 18:12:01,025 INFO 127.0.0.1 - - [11/Mar/2023 18:12:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:12:01,029 INFO 127.0.0.1 - - [11/Mar/2023 18:12:01] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:12:01,030 INFO 127.0.0.1 - - [11/Mar/2023 18:12:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:12:01,998 INFO 127.0.0.1 - - [11/Mar/2023 18:12:01] "POST /statistics HTTP/1.1" 200 -
+2023-03-11 18:12:02,013 INFO 127.0.0.1 - - [11/Mar/2023 18:12:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 18:12:02,014 INFO 127.0.0.1 - - [11/Mar/2023 18:12:02] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 18:12:02,015 INFO 127.0.0.1 - - [11/Mar/2023 18:12:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 18:15:35,477 INFO  * Detected change in 'c:\\Users\\E1002733\\Desktop\\Policy_Management_System\\Project Test\\policy_management_system.py', reloading
+2023-03-11 18:15:35,614 INFO  * Restarting with stat
+2023-03-11 18:15:36,064 WARNING  * Debugger is active!
+2023-03-11 18:15:36,067 INFO  * Debugger PIN: 388-731-485

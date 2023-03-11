@@ -20,7 +20,7 @@
       google.charts.setOnLoadCallback(drawDates);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-                ['j', 'k'],
+                ['Insurance', 'Amount'],
             
                 {% for key, value in data %}
                     ['{{ key }}', {{ value }}],
@@ -42,9 +42,8 @@
         var data = new google.visualization.DataTable();
         data.addColumn('date', 'Date');
         data.addColumn('number', 'Payment');
-        data.addColumn({type:'string', role:'annotation'});
         {% for i in dates %}
-        data.addRow([new Date({{i[0].replace('-', ',')}}), {{i[1]}}, "Hello"])
+        data.addRow([new Date('{{i[0]}}'), {{i[1]}}])
 
         {% endfor %}
     
@@ -54,7 +53,11 @@
         chart.draw(data, {title: 'Payments Made this Year',
 
                           vAxis: {title: "Amount"},
-                          hAxis: {title: "Months"},
+                          hAxis: {
+                            format: 'MMMM',
+                            title: "Months",
+                            gridlines: {count: 15},
+                          },
                           }
                   );
     }
@@ -65,7 +68,7 @@
   
 <ul>
 <div class="tab">
-  <form action = "/policies" method="post">
+  <form action = "/fetch_policies" method="post">
   <button class="tablinks" ><i class="fa fa-folder-o"></i></button>
   </form>
   <form action = "/payments" method="post">
@@ -86,7 +89,7 @@
 
 
 <div id="Stats" class="tabcontent">
-<h3>STATS</h3>
+<h3>USER STATISTICS</h3>
 <div class = "graphs" style="width: 100%;">
   <div id="piechart" style="width: 50%; height: 500px;"></div>
   <div id="scatterplot" style="width: 50%; height: 500px;"></div>

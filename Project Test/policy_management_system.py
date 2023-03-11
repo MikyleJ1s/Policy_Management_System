@@ -44,12 +44,12 @@ def logging_out():
     app.logger.info("Logout path initialised")
     return redirect(url_for('login'))
 
-@app.route("/policies", methods = ['POST'])
+@app.route("/fetch_policies", methods = ['POST'])
 def policies():
     app.logger.info("User policies fetched")
     return redirect(url_for('user_policies'))
 
-@app.route('/yourpolicies', methods=['GET', 'POST'])
+@app.route('/policies', methods=['GET', 'POST'])
 def user_policies(): 
     global user_id # get the user identifier ...
     try:   
@@ -124,7 +124,7 @@ def pay():
 
     myconn.close()
 
-@app.route('/stats', methods=['GET', 'POST'])
+@app.route('/statistics', methods=['GET', 'POST'])
 def stats():
     global user_id # get the user identifier ...
     try:   
@@ -145,6 +145,7 @@ def stats():
         pay = []
         for i in dates:
             pay.append((str(i[0]).replace('-', ','), i[1]))
+        
 
 
 
