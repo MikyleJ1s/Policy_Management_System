@@ -4,8 +4,8 @@ img {
   height: 100px;
 }
 .policies img{
-  width: 70%;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   padding: 0px;
   
 }
@@ -79,6 +79,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 /* Style the tab */
 .tab {
@@ -178,6 +179,13 @@ body {
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+}
+
+.tabcontent .updatebutton:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .tabcontent .logoutbutton input {

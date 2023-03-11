@@ -1,0 +1,203 @@
+2023-03-11 15:41:17,330 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-11 15:41:17,330 INFO [33mPress CTRL+C to quit[0m
+2023-03-11 15:41:17,338 INFO  * Restarting with stat
+2023-03-11 15:41:18,231 WARNING  * Debugger is active!
+2023-03-11 15:41:18,231 INFO  * Debugger PIN: 388-731-485
+2023-03-11 15:41:44,482 ERROR The following error was captured 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Traceback (most recent call last):
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 288, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\E1002733\Downloads\Policy_Management_System-main\Project Test\policy_management_system.py", line 23, in user_login
+    myconn = mysql.connector.connect(host="localhost", user="root", passwd=dbmspass, database="policy_management_system")
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 118, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\abstracts.py", line 1178, in connect
+    self._open_connection()
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 293, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2023-03-11 15:41:44,498 INFO 127.0.0.1 - - [11/Mar/2023 15:41:44] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2023-03-11 15:41:44,834 ERROR The following error was captured 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Traceback (most recent call last):
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 288, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\E1002733\Downloads\Policy_Management_System-main\Project Test\policy_management_system.py", line 23, in user_login
+    myconn = mysql.connector.connect(host="localhost", user="root", passwd=dbmspass, database="policy_management_system")
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 118, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\abstracts.py", line 1178, in connect
+    self._open_connection()
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 293, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2023-03-11 15:41:44,850 INFO 127.0.0.1 - - [11/Mar/2023 15:41:44] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2023-03-11 15:41:44,970 INFO 127.0.0.1 - - [11/Mar/2023 15:41:44] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:41:44,970 INFO 127.0.0.1 - - [11/Mar/2023 15:41:44] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-11 15:41:45,010 INFO 127.0.0.1 - - [11/Mar/2023 15:41:45] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-11 15:41:45,026 INFO 127.0.0.1 - - [11/Mar/2023 15:41:45] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-11 15:42:37,494 INFO Logout page called
+2023-03-11 15:42:37,502 INFO 127.0.0.1 - - [11/Mar/2023 15:42:37] "GET / HTTP/1.1" 200 -
+2023-03-11 15:42:37,518 INFO 127.0.0.1 - - [11/Mar/2023 15:42:37] "GET /static/style.css HTTP/1.1" 200 -
+2023-03-11 15:42:37,518 INFO 127.0.0.1 - - [11/Mar/2023 15:42:37] "GET /static/logo.png HTTP/1.1" 200 -
+2023-03-11 15:42:37,582 INFO 127.0.0.1 - - [11/Mar/2023 15:42:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-11 15:42:42,358 ERROR The following error was captured 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Traceback (most recent call last):
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 288, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'localhost' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\E1002733\Downloads\Policy_Management_System-main\Project Test\policy_management_system.py", line 23, in user_login
+    myconn = mysql.connector.connect(host="localhost", user="root", passwd=dbmspass, database="policy_management_system")
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 118, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\abstracts.py", line 1178, in connect
+    self._open_connection()
+  File "C:\Users\E1002733\AppData\Local\Programs\Python\Python310\lib\site-packages\mysql\connector\connection_cext.py", line 293, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2023-03-11 15:42:42,374 INFO 127.0.0.1 - - [11/Mar/2023 15:42:42] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2023-03-11 15:42:42,390 INFO 127.0.0.1 - - [11/Mar/2023 15:42:42] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:42:42,398 INFO 127.0.0.1 - - [11/Mar/2023 15:42:42] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-11 15:42:42,414 INFO 127.0.0.1 - - [11/Mar/2023 15:42:42] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:01,166 INFO  * Detected change in 'c:\\Users\\E1002733\\Downloads\\Policy_Management_System-main\\Project Test\\policy_management_system.py', reloading
+2023-03-11 15:43:01,337 INFO  * Restarting with stat
+2023-03-11 15:43:01,825 WARNING  * Debugger is active!
+2023-03-11 15:43:01,833 INFO  * Debugger PIN: 388-731-485
+2023-03-11 15:43:05,487 INFO User  data successfully fetched
+2023-03-11 15:43:05,495 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-03-11 15:43:05,519 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 15:43:05,671 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:05,679 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Pet%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,687 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Travel%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,687 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Car%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,687 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:43:05,703 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Home%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,711 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Life%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,711 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/functions.js HTTP/1.1" 200 -
+2023-03-11 15:43:05,711 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Disability%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,711 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Funeral%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,711 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Unemployment%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:05,711 INFO 127.0.0.1 - - [11/Mar/2023 15:43:05] "GET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1" 200 -
+2023-03-11 15:43:23,207 INFO 127.0.0.1 - - [11/Mar/2023 15:43:23] "POST /payments HTTP/1.1" 200 -
+2023-03-11 15:43:23,223 INFO 127.0.0.1 - - [11/Mar/2023 15:43:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:23,223 INFO 127.0.0.1 - - [11/Mar/2023 15:43:23] "GET /static/payment.css HTTP/1.1" 200 -
+2023-03-11 15:43:23,231 INFO 127.0.0.1 - - [11/Mar/2023 15:43:23] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:43:30,265 INFO 127.0.0.1 - - [11/Mar/2023 15:43:30] "POST /stats HTTP/1.1" 200 -
+2023-03-11 15:43:30,273 INFO 127.0.0.1 - - [11/Mar/2023 15:43:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:30,281 INFO 127.0.0.1 - - [11/Mar/2023 15:43:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:43:30,281 INFO 127.0.0.1 - - [11/Mar/2023 15:43:30] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:43:31,908 INFO 127.0.0.1 - - [11/Mar/2023 15:43:31] "POST /payments HTTP/1.1" 200 -
+2023-03-11 15:43:31,932 INFO 127.0.0.1 - - [11/Mar/2023 15:43:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:31,932 INFO 127.0.0.1 - - [11/Mar/2023 15:43:31] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:43:31,932 INFO 127.0.0.1 - - [11/Mar/2023 15:43:31] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,296 INFO User policies fetched
+2023-03-11 15:43:35,296 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[32mPOST /policies HTTP/1.1[0m" 302 -
+2023-03-11 15:43:35,313 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 15:43:35,329 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,337 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,337 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,337 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,337 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,337 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,345 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,345 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,345 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,353 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,353 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:35,353 INFO 127.0.0.1 - - [11/Mar/2023 15:43:35] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:36,611 INFO 127.0.0.1 - - [11/Mar/2023 15:43:36] "POST /stats HTTP/1.1" 200 -
+2023-03-11 15:43:36,619 INFO 127.0.0.1 - - [11/Mar/2023 15:43:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:36,627 INFO 127.0.0.1 - - [11/Mar/2023 15:43:36] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:43:36,627 INFO 127.0.0.1 - - [11/Mar/2023 15:43:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:43:58,815 INFO 127.0.0.1 - - [11/Mar/2023 15:43:58] "POST /settings HTTP/1.1" 200 -
+2023-03-11 15:43:58,831 INFO 127.0.0.1 - - [11/Mar/2023 15:43:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:43:58,831 INFO 127.0.0.1 - - [11/Mar/2023 15:43:58] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:43:58,831 INFO 127.0.0.1 - - [11/Mar/2023 15:43:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:01,210 INFO 127.0.0.1 - - [11/Mar/2023 15:44:01] "POST /payments HTTP/1.1" 200 -
+2023-03-11 15:44:01,226 INFO 127.0.0.1 - - [11/Mar/2023 15:44:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:01,226 INFO 127.0.0.1 - - [11/Mar/2023 15:44:01] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:01,226 INFO 127.0.0.1 - - [11/Mar/2023 15:44:01] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,117 INFO User policies fetched
+2023-03-11 15:44:03,117 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[32mPOST /policies HTTP/1.1[0m" 302 -
+2023-03-11 15:44:03,133 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 15:44:03,141 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,149 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,149 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,149 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,157 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,157 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,157 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,157 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,165 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,165 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,165 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:03,165 INFO 127.0.0.1 - - [11/Mar/2023 15:44:03] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:04,141 INFO 127.0.0.1 - - [11/Mar/2023 15:44:04] "POST /payments HTTP/1.1" 200 -
+2023-03-11 15:44:04,157 INFO 127.0.0.1 - - [11/Mar/2023 15:44:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:04,157 INFO 127.0.0.1 - - [11/Mar/2023 15:44:04] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:04,157 INFO 127.0.0.1 - - [11/Mar/2023 15:44:04] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,249 INFO User policies fetched
+2023-03-11 15:44:07,249 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[32mPOST /policies HTTP/1.1[0m" 302 -
+2023-03-11 15:44:07,265 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "GET /yourpolicies HTTP/1.1" 200 -
+2023-03-11 15:44:07,281 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,281 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,281 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,281 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Home%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,281 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Life%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,289 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Car%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,289 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Funeral%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,297 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Travel%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,297 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Pet%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,297 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Disability%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,297 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Unemployment%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:07,305 INFO 127.0.0.1 - - [11/Mar/2023 15:44:07] "[36mGET /static/Accident%20and%20Health%20Insurance.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:21,766 INFO 127.0.0.1 - - [11/Mar/2023 15:44:21] "POST /payments HTTP/1.1" 200 -
+2023-03-11 15:44:21,782 INFO 127.0.0.1 - - [11/Mar/2023 15:44:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:21,782 INFO 127.0.0.1 - - [11/Mar/2023 15:44:21] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:21,782 INFO 127.0.0.1 - - [11/Mar/2023 15:44:21] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:36,005 INFO 127.0.0.1 - - [11/Mar/2023 15:44:35] "[32mPOST /pay HTTP/1.1[0m" 302 -
+2023-03-11 15:44:36,005 INFO 127.0.0.1 - - [11/Mar/2023 15:44:36] "GET /payments HTTP/1.1" 200 -
+2023-03-11 15:44:36,022 INFO 127.0.0.1 - - [11/Mar/2023 15:44:36] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:36,029 INFO 127.0.0.1 - - [11/Mar/2023 15:44:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:36,037 INFO 127.0.0.1 - - [11/Mar/2023 15:44:36] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:38,079 INFO 127.0.0.1 - - [11/Mar/2023 15:44:38] "POST /stats HTTP/1.1" 200 -
+2023-03-11 15:44:38,095 INFO 127.0.0.1 - - [11/Mar/2023 15:44:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:38,095 INFO 127.0.0.1 - - [11/Mar/2023 15:44:38] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:38,095 INFO 127.0.0.1 - - [11/Mar/2023 15:44:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:44:54,654 INFO 127.0.0.1 - - [11/Mar/2023 15:44:54] "POST /payments HTTP/1.1" 200 -
+2023-03-11 15:44:54,662 INFO 127.0.0.1 - - [11/Mar/2023 15:44:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:44:54,670 INFO 127.0.0.1 - - [11/Mar/2023 15:44:54] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:44:54,670 INFO 127.0.0.1 - - [11/Mar/2023 15:44:54] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 15:45:04,826 INFO 127.0.0.1 - - [11/Mar/2023 15:45:04] "[32mPOST /pay HTTP/1.1[0m" 302 -
+2023-03-11 15:45:04,834 INFO 127.0.0.1 - - [11/Mar/2023 15:45:04] "GET /payments HTTP/1.1" 200 -
+2023-03-11 15:45:04,850 INFO 127.0.0.1 - - [11/Mar/2023 15:45:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:45:04,850 INFO 127.0.0.1 - - [11/Mar/2023 15:45:04] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:45:04,858 INFO 127.0.0.1 - - [11/Mar/2023 15:45:04] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -
+2023-03-11 15:45:07,676 INFO 127.0.0.1 - - [11/Mar/2023 15:45:07] "POST /stats HTTP/1.1" 200 -
+2023-03-11 15:45:07,692 INFO 127.0.0.1 - - [11/Mar/2023 15:45:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:45:07,692 INFO 127.0.0.1 - - [11/Mar/2023 15:45:07] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:45:07,692 INFO 127.0.0.1 - - [11/Mar/2023 15:45:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-03-11 15:45:21,197 INFO 127.0.0.1 - - [11/Mar/2023 15:45:21] "POST /payments HTTP/1.1" 200 -
+2023-03-11 15:45:21,213 INFO 127.0.0.1 - - [11/Mar/2023 15:45:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-03-11 15:45:21,213 INFO 127.0.0.1 - - [11/Mar/2023 15:45:21] "[36mGET /static/functions.js HTTP/1.1[0m" 304 -
+2023-03-11 15:45:21,213 INFO 127.0.0.1 - - [11/Mar/2023 15:45:21] "[36mGET /static/payment.css HTTP/1.1[0m" 304 -

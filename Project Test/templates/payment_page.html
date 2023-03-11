@@ -37,14 +37,34 @@
 
 <div id="Card" class="tabcontent">
   <h3>USER PAYMENT</h3><br>
-  <form action="/pay" method="post">
-    <tr>Payment Amount</tr><br>
-    <input class="update" type="text" placeholder="Amount you want to pay"  name="amount_paid" value="{{request.form.amount_paid }}">
+  <form action="/pay" method="post" name = "payment_form" onsubmit="return validate_payment()" onkeyup="button_logic()">
+
+    <tr>Account Number</tr><br>
+    <input class="update" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" name="account_number" minlength="16" maxlength="16"
+      value="{{request.form.account_number }}" /><br><br>
+    <tr>Expiry Date </tr> <br>
+    <input class="update"  type="number" placeholder="MM/YY" name="expiry_date" value="{{request.form.expiry_date }}" /><br><br>
+    <tr>CVV </tr><br>
+    <input class="update"  type="number" placeholder= "XXX" name="cvv" min="100" max="999"
+      value="{{request.form.cvv }}" /><br><br>
+    <tr>Insurance Name</tr> <br>
+    <select name= "options" class="update">
+    {% for item in policies%}
+      <option value="{{item[0]}}">{{item[0]}}</option>
+    {% endfor %}
+    </select>
       <br><br>
-    <tr>Policy Name</tr> <br>
-     <input class="update" type="text" placeholder="Name of the policy" name="policy_name" value="{{request.form.policy_name }}">
-       <br><br>
-       <input class="updatebutton" type="submit" value="Pay"/>
+    <tr>Amount to Pay</tr> <br><input class="update"  type="number" placeholder="R 00.00" name="amount_paid" min = "0"
+      value="{{request.form.amount_paid}}" /><br><br>
+    <input id="pay_button" disabled class="updatebutton" type="submit" value="Pay">
+    <br>
+
+        
+
+
+
+          
+
      </form>
 
 
