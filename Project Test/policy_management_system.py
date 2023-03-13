@@ -9,7 +9,7 @@ user_id = ''
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename="PMS.log", filemode='a', level = logging.DEBUG, format = f"%(asctime)s %(levelname)s %(message)s")
 #global dbms password variable
-dbmspass = "Mikyle123"
+dbmspass = "Sindiswa123"
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
