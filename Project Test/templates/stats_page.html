@@ -16,8 +16,9 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
+      google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
-      google.charts.setOnLoadCallback(drawDates);
+      google.charts.setOnLoadCallback(drawSeriesChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
                 ['Insurance', 'Amount'],
@@ -28,8 +29,11 @@
         ]);
  
         var options = {
-          title: 'Where Your Money Went',
+          title: 'Amount Spent on Each Insurance',
           pieStartAngle: 90, 
+          legend: 'none', 
+          chartArea: {width: 350, height: 350, }, 
+          colors: ['#0A2647', '#144272', '#205295', '#2C74B3', '#191970', '#000080', '#4682B4', '#0000FF', '#6495ED']
 
         };
  
@@ -38,29 +42,24 @@
       }
 
 
-      function drawDates() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('date', 'Date');
-        data.addColumn('number', 'Payment');
-        {% for i in dates %}
-        data.addRow([new Date('{{i[0]}}'), {{i[1]}}])
 
+    function drawSeriesChart()
+        {
+          var data = google.visualization.arrayToDataTable([
+             ['Time', 'Amount Spent', { role: 'annotation'}],
+             {% for i in info %}
+                ['{{ i[0] }}/{{i[1]}}', {{ i[2] }}, 'R{{i[2]}}'],
         {% endfor %}
-    
-  
-        var chart = new google.visualization.ScatterChart(
-            document.getElementById('scatterplot'));
-        chart.draw(data, {title: 'Payments Made this Year',
+          ]);
 
-                          vAxis: {title: "Amount"},
-                          hAxis: {
-                            format: 'MMMM',
-                            title: "Months",
-                            gridlines: {count: 15},
-                          },
-                          }
-                  );
-    }
+          var options = {title: 'Monthly Expenses', 
+        legend: 'none', hAxis: {title: "Month/Year"},vAxis: { textPosition: 'none' },};  
+
+          var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+          chart.draw(data, options);
+       }
+   
+
     </script>
 </head>
 
@@ -69,18 +68,18 @@
 <ul>
 <div class="tab">
   <form action = "/fetch_policies" method="post">
-  <button class="tablinks" ><i class="fa fa-folder-o"></i></button>
+  <button><i class="fa fa-folder-o"></i></button>
   </form>
   <form action = "/payments" method="post">
-  <button class="tablinks" ><i class="fa fa-credit-card"></i></button>
+  <button><i class="fa fa-credit-card"></i></button>
 </form>
 
-  <button class="tablinks" onclick="opentab(event, 'Stats')" id="defaultOpen"><i class="fa fa-bar-chart"></i></button>
+  <button onclick="opentab(event, 'Stats')" id="defaultOpen"><i class="fa fa-bar-chart"></i></button>
 
 
-  <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+  <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br>
    <form action = "/settings" method="post"> 
-  <button class="tablinks" ><i class="fa fa-user-o"></i></button>
+  <button><i class="fa fa-user-o"></i></button>
 </form>
 
 </div>
@@ -90,26 +89,20 @@
 
 <div id="Stats" class="tabcontent">
 <h3>USER STATISTICS</h3>
-<div class = "graphs" style="width: 100%;">
-  <div id="piechart" style="width: 50%; height: 500px;"></div>
-  <div id="scatterplot" style="width: 50%; height: 500px;"></div>
+<div class="polcontent">
+<div class = "graphs">
+  <div id="piechart" style="width: 100%; height: 90%;"></div>
+</div>
+<div class = "graphs">
+  <div id="columnchart" style="width: 100%; height: 90%;"></div>
 </div>
 </div>
-
+</div>
 
 </ul>
 <script>
 
 function opentab(evt, tabname) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
   document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }

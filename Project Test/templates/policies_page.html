@@ -19,56 +19,55 @@
 <ul>
 <div class="tab">
 
-    <button class="tablinks" onclick="opentab(event, 'Policies')" id="defaultOpen"><i class="fa fa-folder-o"></i></button>
+    <button onclick="opentab(event, 'Policies')" id="defaultOpen"><i class="fa fa-folder-o"></i></button>
  
     <form action = "/payments" method="post">
-    <button class="tablinks" ><i class="fa fa-credit-card"></i></button>
+    <button><i class="fa fa-credit-card"></i></button>
   </form>
    <form action = "/statistics" method="post"> 
-    <button class="tablinks" ><i class="fa fa-bar-chart"></i></button>
+    <button><i class="fa fa-bar-chart"></i></button>
      </form>
   
-    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br>
      <form action = "/settings" method="post"> 
-    <button class="tablinks" ><i class="fa fa-user-o"></i></button>
+    <button><i class="fa fa-user-o"></i></button>
   </form>
 </div>
 
 <div id="Policies" class="tabcontent">
   <h3>USER POLICIES</h3>
-  
-  {% for item in policies %}   
-  <div class="policies">
-      <h3>
-        
-        <img src="static/{{item[0]}}.png"/>
-        <br><br>
-        {{ item[0] }} </h3> 
-        <p>
-
-        R{{ item[1] }} 
-        <br> 
-        Insured Since: {{ item[2] }}
-        </p>
+  <div class="polcontent">
+  <div class="row">{% for item in policies %}   
+    <div class="column">
       
-    </div>
-  {% endfor %}
-</div>
+      <div class="policies">
+          
+            <div style="text-align:center">
+            <img style="width: 70%; height: 150px; padding-left: 0px" src="static/{{item[0]}}.png"/>
+            </div>
 
+            <h3 >
+            {{ item[0] }} </h3> 
+            <p>
+
+            R {{ item[1] }} 
+            <br> 
+            Date: {{ item[2] }}
+            </p>
+
+            <a href="/static/sanlamLogo.jpg" download>Download Details</a>
+          
+        </div>
+      
+      </div>{% endfor %}
+    </div>
+</div>
+</div>
 
 </ul>
 <script>
 
 function opentab(evt, tabname) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
   document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }

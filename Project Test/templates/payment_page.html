@@ -19,33 +19,34 @@
 <ul>
 <div class="tab">
   <form action = "/fetch_policies" method="post">
-    <button class="tablinks" ><i class="fa fa-folder-o"></i></button>
+    <button><i class="fa fa-folder-o"></i></button>
     </form>
     
-    <button class="tablinks" onclick="opentab(event, 'Card')" id="defaultOpen"><i class="fa fa-credit-card"></i></button>
+    <button onclick="opentab(event, 'Card')" id="defaultOpen"><i class="fa fa-credit-card"></i></button>
   
   <form action = "/statistics" method="post">
-    <button class="tablinks" ><i class="fa fa-bar-chart"></i></button>
+    <button><i class="fa fa-bar-chart"></i></button>
   </form>
   
-    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br>
      <form action = "/settings" method="post"> 
-    <button class="tablinks" ><i class="fa fa-user-o"></i></button>
+    <button><i class="fa fa-user-o"></i></button>
   </form>
 </div>
 
 
 <div id="Card" class="tabcontent">
   <h3>USER PAYMENT</h3><br>
+  <div class="polcontent">
   <form action="/pay" method="post" name = "payment_form" onsubmit="return validate_payment()" onkeyup="button_logic()">
 
     <tr>Account Number</tr><br>
     <input class="update" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" name="account_number" minlength="16" maxlength="16"
       value="{{request.form.account_number }}" /><br><br>
     <tr>Expiry Date </tr> <br>
-    <input class="update"  type="number" placeholder="MM/YY" name="expiry_date" value="{{request.form.expiry_date }}" /><br><br>
+    <input class="update"  type="month" placeholder="MMMM/YYYY" name="expiry_date" value="{{request.form.expiry_date }}" /><br><br>
     <tr>CVV </tr><br>
-    <input class="update"  type="number" placeholder= "XXX" name="cvv" min="100" max="999"
+    <input class="update"  type="text" placeholder= "XXX" name="cvv" minlength="3" maxlength="3"
       value="{{request.form.cvv }}" /><br><br>
     <tr>Insurance Name</tr> <br>
     <select name= "options" class="update">
@@ -66,22 +67,16 @@
           
 
      </form>
-
+    </div>
 
   </div>
+
+  <div id="snackbar">You made a Successful Payment :)</div>
+
 </ul>
 <script>
 
 function opentab(evt, tabname) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
   document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }

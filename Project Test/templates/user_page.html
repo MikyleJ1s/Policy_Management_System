@@ -19,30 +19,33 @@
 <ul>
 <div class="tab">
   <form action = "/fetch_policies" method="post">
-    <button class="tablinks" ><i class="fa fa-folder-o"></i></button>
+    <button><i class="fa fa-folder-o"></i></button>
     </form>
     <form action = "/payments" method="post">
-    <button class="tablinks" ><i class="fa fa-credit-card"></i></button>
+    <button><i class="fa fa-credit-card"></i></button>
   </form>
       <form action = "/statistics" method="post">  
-    <button class="tablinks" ><i class="fa fa-bar-chart"></i></button>
+    <button><i class="fa fa-bar-chart"></i></button>
    </form>
   
-    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+    <br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>  <br><br><br>
 
-    <button class="tablinks" onclick="opentab(event, 'User')" id="defaultOpen"><i class="fa fa-user-o"></i></button>
+    <button onclick="opentab(event, 'User')" id="defaultOpen"><i class="fa fa-user-o"></i></button>
  
 </div>
 
 
 <div id="User" class="tabcontent">
   <h3>USER PROFILE</h3><br>
+  <div class="polcontent">
   <form name = "update_form" action="/userprofile" method="post" onsubmit="return validate_new_credentials()" onkeyup="update_button_logic()">
-    <tr>User Name</tr><br>
-    <input class="update" type="text" placeholder="Enter New Username"  name="new_username" value="{{request.form.new_username }}">
-      <br><br>
+    <tr>Email</tr><br>
+    <input class="update" type="email" placeholder="new email address"  name="new_username" value="{{request.form.new_username }}"><br>
+     <div style="color: #0074c9">If you enter an email that Already Exists in Our System then Only Your Password will be updated ...</div>
+      <br> 
+      <br>
     <tr>Password</tr> <br>
-     <input class="update" type="text" placeholder="Enter New Password" name="new_password" value="{{request.form.new_password }}">
+     <input class="update" type="text" placeholder="new password" name="new_password" value="{{request.form.new_password }}">
        <br><br>
        <input id="updating_button" disabled class="updatebutton" type="submit" value="Update"/>
      </form>
@@ -50,25 +53,17 @@
      <br><br>       
      <br><br>       
      <br><br>       
-     <br><br>
+     
     <form class="logoutbutton" action="/logging_out" method="post" >
       <input type="submit" value="Log Out">
     </form>  
   </div>
+</div>
 
 </ul>
 <script>
 
 function opentab(evt, tabname) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
   document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }

@@ -18,9 +18,21 @@ function update_button_logic() {
    }
 
 function validate_payment() {
-      alert("You made a Successful Payment :)");
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+      //alert("You made a Successful Payment :)");
       return true;
 }
+
+function validate_credentials() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+  //alert("You made a Successful Payment :)");
+  return true;
+}
+
 
 function button_logic() {
   var account = document.forms["payment_form"]["account_number"].value;
@@ -36,3 +48,5 @@ function button_logic() {
        }
 
    }
+
+
