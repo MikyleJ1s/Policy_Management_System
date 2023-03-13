@@ -7,13 +7,13 @@ app = Flask(__name__)
 user_id = ''
 #logger config
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename="PMS.log", level = logging.DEBUG, format = f"%(asctime)s %(levelname)s %(message)s")
+logging.basicConfig(filename="PMS.log", filemode='a', level = logging.DEBUG, format = f"%(asctime)s %(levelname)s %(message)s")
 #global dbms password variable
 dbmspass = "Mikyle123"
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
-    app.logger.info("Logout page called")
+    app.logger.info("Logout method initialised and login page called")
     return render_template('login_page.html')
 
     
@@ -45,19 +45,19 @@ def user_login():
                 return render_template('login_page.html', error = "Invalid Credentials") 
             
     except Exception as e:
-        app.logger.exception("The following error was captured {}".format(e))
+        app.logger.exception("The following error was captured within the login method {}".format(e))
         myconn.rollback()
     myconn.close()
  
 
 @app.route("/logging_out", methods = ['POST'])
 def logging_out():
-    app.logger.info("User has logged out")
+    app.logger.info("Logout path initialised")
     return redirect(url_for('login'))
 
 @app.route("/fetch_policies", methods = ['POST'])
 def policies():
-    app.logger.info("User policies fetched")
+    app.logger.info("User {} policies fetched".format(user_id))
     return redirect(url_for('user_policies'))
 
 @app.route('/policies', methods=['GET', 'POST'])
@@ -81,19 +81,20 @@ def user_policies():
         return render_template('policies_page.html', policies='')
     
     except Exception as e:
-        app.logger.error("Error fetching data as follows {}". format(e))
+        app.logger.error("Error fetching data within the user policy method: {}". format(e))
         myconn.rollback()
     myconn.close()
 
 
 @app.route('/payments', methods=['GET', 'POST'])
 def payments():
+    app.logger.info("Payments initialised")
     # first get all the user's policies ... 
     myconn = mysql.connector.connect(host="localhost", user="root", passwd=dbmspass, database="policy_management_system")
     cur = myconn.cursor()     
     cur.execute("select policy_name from policy_table where user_identifier = '" + str(user_id) + "'")    
     policies = cur.fetchall()   
-    
+    app.logger.info("User {} payments fetched successfully from DB".format(user_id))
     # now add the policies to payment page so it can be considered as an option ...
     return render_template('payment_page.html', policies = policies)
 
@@ -134,7 +135,7 @@ def pay():
      
     
     except Exception as e:
-        app.logger.exception("The following error was captured {}".format(e))
+        app.logger.exception("The following error was captured in  the payment method: {}".format(e))
         myconn.rollback()
 
     myconn.close()
@@ -166,7 +167,7 @@ def stats():
 
     
     except Exception as e:
-        app.logger.exception("The following error was captured {}".format(e))
+        app.logger.exception("The following error was captured within the statistics method: {}".format(e))
         myconn.rollback()
     myconn.close()
 
@@ -175,6 +176,7 @@ def stats():
 # when the user wants to update their credentials ...
 @app.route('/settings', methods=['GET', 'POST'])
 def settings():
+    app.logger.info("User {} accessed settings".format(user_id))
     return render_template('user_page.html')
 
 @app.route('/userprofile', methods = ['GET', 'POST'])
@@ -204,7 +206,7 @@ def user_settings():
             return render_template('policy_page.html')        
     
     except Exception as e:
-        app.logger.exception("The following error was captured {}".format(e))
+        app.logger.exception("The following error was captured winthin the user profile method: {}".format(e))
         myconn.rollback()
 
     myconn.close()
@@ -212,5 +214,4 @@ def user_settings():
  
 
 if __name__ == "__main__":
-    #app.run(host='0.0.0.0', port=80)
     app.run(debug=True)
